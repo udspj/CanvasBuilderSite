@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+import iconimg from "../resource/logonav.png";
 
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
@@ -62,9 +63,7 @@ class HeaderBar extends Component {
 
 	      <AppBar position="static" color="default" className={classes.appBar}>
 	        <Toolbar>
-	          <Typography variant="title" color="inherit" noWrap className={classes.menuText}>
-	            Company name
-	          </Typography>
+	          <img src={iconimg} alt="iconimg" />
 	          <div className={classes.menuButtonGroup}>
 		          <Button className={classes.menuText} component={Link} to="/home">Features</Button>
 		          <Button className={classes.menuText} component={Link} to="/cb">Enterprise</Button>
