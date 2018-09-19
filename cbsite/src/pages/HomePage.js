@@ -70,14 +70,6 @@ const styles = theme => ({
   prodimg: {
   	width: '100%',
   	height: '100%',
-  },
-  section3: {
-    backgroundImage: `url(${homebk3})`,
-    textColor: '#fff',
-    backgroundSize: '100%',
-    height: '100vh',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed'
   }
 })
 
@@ -146,7 +138,7 @@ class HomePage extends Component {
 	      </Grid>
       </section>
 
-      <section className={classes.section3}>
+      <section>
       <div>
       	<img className={classes.logo} src={logo} alt="iconimg" />
       	<p className={classes.title1}>HTML5 游戏和应用的集成开发环境</p>
