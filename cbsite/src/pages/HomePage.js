@@ -70,6 +70,13 @@ const styles = theme => ({
   prodimg: {
   	width: '100%',
   	height: '100%',
+  },
+  bk: {
+    backgroundImage: `url(${homebk3})`,
+    textColor: '#fff',
+    backgroundSize: '100%',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed'
   }
 })
 
@@ -85,7 +92,7 @@ class HomePage extends Component {
   render() {
     const {classes} = this.props;
     return (
-      <div>
+      <div className={classes.bk}>
 
       <section className={classes.section1}>
       	<img className={classes.logo} src={logo} alt="iconimg" />
