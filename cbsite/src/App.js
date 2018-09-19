@@ -1,29 +1,30 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Button from '@material-ui/core/Button';
 import ca from "./ca";
 import cb from "./cb";
-import Header from "./head";
+import Header from "./components/HeaderBar";
+import Footer from "./components/FooterBar";
+import HomePage from "./pages/HomePage";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <Router basename="/">
+        <Router basename="/">
           <div>
+            <Header />
 
-      <Header />
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route path="/ca" component={ca} />
+              <Route path="/cb" component={cb} />
+              <Route path="/home" component={HomePage} />
+            </Switch>
 
-                  <Switch>
-                    <Route exact path="/" component={ca} />
-                    <Route path="/ca" component={ca} />
-                    <Route path="/cb" component={cb} />
-                  </Switch>
-</div>
-          </Router>
-
+            <Footer />
+          </div>
+        </Router>
       </div>
     );
   }
