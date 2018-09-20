@@ -10,6 +10,7 @@ import blueimg from "../resource/blueimg.png";
 import icon1 from "../resource/homeicon1.png";
 import icon2 from "../resource/homeicon2.png";
 import icon3 from "../resource/homeicon3.png";
+import shapes from "../resource/homeshape.png";
 
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
@@ -87,7 +88,7 @@ const styles = theme => ({
   line: {
   	width: '20%',
   	height: '2px',
-  	background: '#E0E0E0',
+  	background: '#808fb9',
   	marginLeft: 'auto',
   	marginRight: 'auto',
   	marginBottom: '50px'
@@ -100,7 +101,8 @@ const styles = theme => ({
   },
   whitecontent: {
   	backgroundColor: '#fff',
-  	paddingBottom: '70px'
+  	paddingBottom: '70px',
+  	paddingTop: '50px'
   },
   title3: {
   	fontSize: '30px',
@@ -113,7 +115,7 @@ const styles = theme => ({
   linelong: {
   	width: '100%',
   	height: '1px',
-  	background: '#E0E0E0',
+  	background: '#808fb9',
   	marginBottom: '50px'
   },
   iconcontent: {
@@ -129,6 +131,10 @@ const styles = theme => ({
   title5: {
   	fontSize: '22px',
   	color: '#808fb9'
+  },
+  shapes: {
+  	marginTop: '50px',
+  	marginBottom: '50px'
   }
 })
 
@@ -206,9 +212,10 @@ class HomePage extends Component {
 	      <div className={classes.whitecontent}>
 	      	<p className={classes.title4}>网络游戏开发</p>
 	      	<div className={classes.line}></div>
-	      	<img className={classes.blueimg} src={blueimg} alt="" />
-	      	<p className={classes.title4}>网络游戏开发</p>
+	      	<img className={classes.shapes} src={shapes} alt="" />
 	      	<div className={classes.linelong}></div>
+	      	<p className={classes.title4}>网络游戏开发</p>
+	      	<div className={classes.line}></div>
 	      	<div className={classes.iconcontent}>
 	      	  <Grid container direction="row" justify="center" alignItems="flex-start">
 		        <Grid item xs={4}>
