@@ -7,6 +7,8 @@ import Header from "./components/HeaderBar";
 import Footer from "./components/FooterBar";
 import HomePage from "./pages/HomePage";
 import VideoListPage from "./pages/VideoListPage";
+import DocumentPage from "./pages/DocumentPage";
+import AboutPage from "./pages/AboutPage";
 
 class App extends Component {
   render() {
@@ -17,11 +19,11 @@ class App extends Component {
             <Header />
 
             <Switch>
-              <Route exact path="/" component={VideoListPage} />
-              <Route path="/ca" component={ca} />
-              <Route path="/cb" component={cb} />
+              <Route exact path="/" component={DocumentPage} />
               <Route path="/home" component={HomePage} />
               <Route path="/videolist" component={VideoListPage} />
+              <Route path="/document" component={DocumentPage} />
+              <Route path="/about" component={AboutPage} />
             </Switch>
 
             <Footer />

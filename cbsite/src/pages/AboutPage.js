@@ -14,12 +14,7 @@ const styles = theme => ({
     paddingTop: '30px',
     paddingBottom: '30px',
     paddingLeft: '60px',
-    paddingRight: '60px',
-    backgroundColor: '#e1e1e1',
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: 119
+    paddingRight: '60px'
   },
   line: {
   	width: '90%',
@@ -54,20 +49,17 @@ const styles = theme => ({
   },
   eyeimg: {
   	marginTop: '16px'
-  },
-  bar: {
-    position: 'absolute',
-    left: 0,
-    right: 0
   }
 })
 
 const listdata = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
 
-class VideoListPage extends Component {
+class AboutPage extends Component {
     constructor() {
         super()
         this.state = {
+        	open: false,
+            value: 0
         }
     }
 
@@ -75,41 +67,40 @@ class VideoListPage extends Component {
     const {classes} = this.props;
     return (
       <div className={classes.bkdiv}>
+      	<ListTabBar />
 
       	<GridList className={classes.gridList} cellHeight={250} cols={4} spacing={30}>   		
-    			{listdata.map(tile => (
-    				<GridListTile key={tile}>
-    					<div className={classes.gridtile}>
-    						<div>
-    							<img width='100%' height={100} src="https://material-ui.com/static/images/grid-list/breakfast.jpg" alt="sdfsad" />
-    						</div>
-    						<Grid container direction="row" justify="center" alignItems="flex-start">
-    	  		        <Grid item xs={9}>
-    	  		          	<p className={classes.title} align="left"> 教程1 </p>
-    	  		        </Grid>
-    	  		        <Grid item xs={1}>
-    	  		          	<img className={classes.eyeimg} src={eye} alt="" />
-    	  		        </Grid>
-    	  		        <Grid item xs={2}>
-    	  	      			<p className={classes.eyetext}>1111</p>
-    	  		        </Grid>
-    	  		    </Grid>
-    						<div className={classes.line}></div>
-    						<p className={classes.content} align="left"> 描述描述描述描述描述描述，描述描述描述描述描述描述，描述描述，描述描述描述描述 </p>
-    					</div>
-    				</GridListTile>
+			{listdata.map(tile => (
+				<GridListTile key={tile}>
+					<div className={classes.gridtile}>
+						<div>
+							<img width='100%' height={100} src="https://material-ui.com/static/images/grid-list/breakfast.jpg" alt="sdfsad" />
+						</div>
+						<Grid container direction="row" justify="center" alignItems="flex-start">
+			  		        <Grid item xs={9}>
+			  		          	<p className={classes.title} align="left"> 教程1 </p>
+			  		        </Grid>
+			  		        <Grid item xs={1}>
+			  		          	<img className={classes.eyeimg} src={eye} alt="" />
+			  		        </Grid>
+			  		        <Grid item xs={2}>
+			  	      			<p className={classes.eyetext}>1111</p>
+			  		        </Grid>
+			  		    </Grid>
+						<div className={classes.line}></div>
+						<p className={classes.content} align="left"> 描述描述描述描述描述描述，描述描述描述描述描述描述，描述描述，描述描述描述描述 </p>
+					</div>
+				</GridListTile>
 	        ))}
-        </GridList>
-      
-        <ListTabBar className={classes.bar} />
+	    </GridList>
 
       </div>
     );
   }
 }
 
-VideoListPage.propTypes = {
+AboutPage.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(VideoListPage);
+export default withStyles(styles)(AboutPage);

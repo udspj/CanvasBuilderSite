@@ -67,9 +67,9 @@ class HeaderBar extends Component {
 	          <div className={classes.menuButtonGroup}>
 		          <Button className={classes.menuText} component={Link} to="/home">Features</Button>
 		          <Button className={classes.menuText} component={Link} to="/videolist">Enterprise</Button>
-		          <Button className={classes.menuText} component={Link} to="/ca">Support</Button>
+		          <Button className={classes.menuText} component={Link} to="/document">Support</Button>
 		          <Button className={classes.menuText} component={Link} to="/cb">Support</Button>
-		          <Button className={classes.menuText} component={Link} to="/cb">Support</Button>
+		          <Button className={classes.menuText} component={Link} to="/about">Support</Button>
 	          </div>
 	          
 	          <div>
