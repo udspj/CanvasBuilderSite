@@ -6,6 +6,10 @@ import homebk1 from "../resource/homebk1.jpg";
 import logo from "../resource/logopage.png";
 import homebk2 from "../resource/homebk2.jpg";
 import homebk3 from "../resource/homebk3.jpg";
+import blueimg from "../resource/blueimg.png";
+import icon1 from "../resource/homeicon1.png";
+import icon2 from "../resource/homeicon2.png";
+import icon3 from "../resource/homeicon3.png";
 
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
@@ -42,7 +46,8 @@ const styles = theme => ({
     backgroundImage: `url(${homebk2})`,
     textColor: '#fff',
     backgroundSize: 'cover',
-    paddingBottom: '50px'
+    paddingBottom: '50px',
+    marginBottom: '30px'
   },
   card1: {
   	marginTop: '50px',
@@ -65,7 +70,8 @@ const styles = theme => ({
   	height: '28vw',
   	backgroundColor: '#cc00ff',
   	marginTop: '50px',
-  	marginLeft: '30px'
+  	marginLeft: 'auto',
+  	marginRight: 'auto'
   },
   prodimg: {
   	width: '100%',
@@ -77,6 +83,52 @@ const styles = theme => ({
     backgroundSize: '100%',
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed'
+  },
+  line: {
+  	width: '20%',
+  	height: '2px',
+  	background: '#E0E0E0',
+  	marginLeft: 'auto',
+  	marginRight: 'auto',
+  	marginBottom: '50px'
+  },
+  bluecontent: {
+  	padding: '50px'
+  },
+  blueimg: {
+  	boxShadow: '0px 0px 22px 0px #333'
+  },
+  whitecontent: {
+  	backgroundColor: '#fff',
+  	paddingBottom: '70px'
+  },
+  title3: {
+  	fontSize: '30px',
+  	color: '#fff'
+  },
+  title4: {
+  	fontSize: '30px',
+  	color: '#808fb9'
+  },
+  linelong: {
+  	width: '100%',
+  	height: '1px',
+  	background: '#E0E0E0',
+  	marginBottom: '50px'
+  },
+  iconcontent: {
+  	backgroundColor: '#fcfcfd',
+  	padding: '50px'
+  },
+  iconimg: {
+  	width: '90px',
+  	height: '90px',
+  	marginLeft: 'auto',
+  	marginRight: 'auto'
+  },
+  title5: {
+  	fontSize: '22px',
+  	color: '#808fb9'
   }
 })
 
@@ -146,26 +198,44 @@ class HomePage extends Component {
       </section>
 
       <section>
-      <div>
-      	<img className={classes.logo} src={logo} alt="iconimg" />
-      	<p className={classes.title1}>HTML5 游戏和应用的集成开发环境</p>
-      	<p className={classes.title2}>JAVASCRIPT / TYPESCRIPT</p>
-      	<Button className={classes.dlbtn} variant="outlined" size="large" color="default">
-          免费下载
-        </Button>
-      	<img className={classes.logo} src={logo} alt="iconimg" />
-      	<p className={classes.title1}>HTML5 游戏和应用的集成开发环境</p>
-      	<p className={classes.title2}>JAVASCRIPT / TYPESCRIPT</p>
-      	<Button className={classes.dlbtn} variant="outlined" size="large" color="default">
-          免费下载
-        </Button>
-      	<img className={classes.logo} src={logo} alt="iconimg" />
-      	<p className={classes.title1}>HTML5 游戏和应用的集成开发环境</p>
-      	<p className={classes.title2}>JAVASCRIPT / TYPESCRIPT</p>
-      	<Button className={classes.dlbtn} variant="outlined" size="large" color="default">
-          免费下载
-        </Button>
-      </div>
+	      <div className={classes.bluecontent}>
+	      	<p className={classes.title3}>网络游戏开发</p>
+	      	<div className={classes.line}></div>
+	      	<img className={classes.blueimg} src={blueimg} alt="" />
+	      </div>
+	      <div className={classes.whitecontent}>
+	      	<p className={classes.title4}>网络游戏开发</p>
+	      	<div className={classes.line}></div>
+	      	<img className={classes.blueimg} src={blueimg} alt="" />
+	      	<p className={classes.title4}>网络游戏开发</p>
+	      	<div className={classes.linelong}></div>
+	      	<div className={classes.iconcontent}>
+	      	  <Grid container direction="row" justify="center" alignItems="flex-start">
+		        <Grid item xs={4}>
+		          	<img className={classes.iconimg} src={icon1} alt="" />
+	      			<p className={classes.title5}>完整项目模板</p>
+		        </Grid>
+		        <Grid item xs={4}>
+		          	<img className={classes.iconimg} src={icon2} alt="" />
+	      			<p className={classes.title5}>完整项目模板</p>
+		        </Grid>
+		        <Grid item xs={4}>
+		          	<img className={classes.iconimg} src={icon3} alt="" />
+	      			<p className={classes.title5}>完整项目模板</p>
+		        </Grid>
+		      </Grid>
+	      	</div>
+	      </div>
+	      <div className={classes.bluecontent}>
+	      	<p className={classes.title3}>网络游戏开发</p>
+	      	<div className={classes.line}></div>
+	      	<img className={classes.blueimg} src={blueimg} alt="" />
+	      </div>
+	      <div className={classes.bluecontent}>
+	      	<p className={classes.title3}>网络游戏开发</p>
+	      	<div className={classes.line}></div>
+	      	<img className={classes.blueimg} src={blueimg} alt="" />
+	      </div>
       </section>
 
       </div>
