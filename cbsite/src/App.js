@@ -19,7 +19,7 @@ class App extends Component {
             <Header />
 
             <Switch>
-              <Route exact path="/" component={DocumentPage} />
+              <Route exact path="/" component={HomePage} />
               <Route path="/home" component={HomePage} />
               <Route path="/videolist" component={VideoListPage} />
               <Route path="/document" component={DocumentPage} />
