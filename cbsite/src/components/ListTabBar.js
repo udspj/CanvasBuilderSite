@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import iconimg from "../resource/logonav.png";
@@ -19,19 +18,25 @@ import MenuList from '@material-ui/core/MenuList';
 
 const styles = theme => ({
   appBar: {
-    backgroundColor: '#000',
-    textColor: '#fff'
+    backgroundColor: '#fff',
+    height: '40px'
   },
   menuButtonGroup: {
   	marginLeft: 'auto',
-  	marginRight: 'auto'
+  	marginRight: 'auto',
+  	marginTop: '-24px'
   },
   menuText: {
-    color: "#fff"
+    color: "#666"
+  },
+  downMenuText: {
+    backgroundColor: '#666',
+    color: "#fff",
+  	marginTop: '-28px'
   }
 })
 
-class HeaderBar extends Component {
+class ListTabBar extends Component {
     constructor() {
         super()
         this.state = {
@@ -63,15 +68,7 @@ class HeaderBar extends Component {
 
 	      <AppBar position="static" color="default" className={classes.appBar}>
 	        <Toolbar>
-	          <img src={iconimg} alt="iconimg" />
-	          <div className={classes.menuButtonGroup}>
-		          <Button className={classes.menuText} component={Link} to="/home">Features</Button>
-		          <Button className={classes.menuText} component={Link} to="/videolist">Enterprise</Button>
-		          <Button className={classes.menuText} component={Link} to="/ca">Support</Button>
-		          <Button className={classes.menuText} component={Link} to="/cb">Support</Button>
-		          <Button className={classes.menuText} component={Link} to="/cb">Support</Button>
-	          </div>
-	          
+
 	          <div>
 		        <Button
 		            buttonRef={node => {
@@ -80,9 +77,9 @@ class HeaderBar extends Component {
 		            aria-owns={this.state.open ? 'menu-list-grow' : null}
 		            aria-haspopup="true"
 		            onClick={this.handleToggle.bind(this)}
-		            className={classes.menuText}
+		            className={classes.downMenuText}
 		        >
-		            Toggle Menu Grow
+		            IED和编程 ▼
 		        </Button>
 		        <Popper open={this.state.open} anchorEl={this.anchorEl} transition disablePortal>
 		            {({ TransitionProps, placement }) => (
@@ -104,6 +101,14 @@ class HeaderBar extends Component {
 		        </Popper>
 		      </div>
 
+	          <div className={classes.menuButtonGroup}>
+		          <Button className={classes.menuText}>Features</Button>
+		          <Button className={classes.menuText}>Enterprise</Button>
+		          <Button className={classes.menuText}>Support</Button>
+		          <Button className={classes.menuText}>Support</Button>
+		          <Button className={classes.menuText}>Support</Button>
+	          </div>
+	          
         	</Toolbar>
       	</AppBar>
 
@@ -113,8 +118,8 @@ class HeaderBar extends Component {
 
 }
 
-HeaderBar.propTypes = {
+ListTabBar.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(HeaderBar);
+export default withStyles(styles)(ListTabBar);

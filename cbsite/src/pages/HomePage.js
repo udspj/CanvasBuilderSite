@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import homebk1 from "../resource/homebk1.jpg";
@@ -218,19 +217,19 @@ class HomePage extends Component {
 	      	<div className={classes.line}></div>
 	      	<div className={classes.iconcontent}>
 	      	  <Grid container direction="row" justify="center" alignItems="flex-start">
-		        <Grid item xs={4}>
-		          	<img className={classes.iconimg} src={icon1} alt="" />
-	      			<p className={classes.title5}>完整项目模板</p>
-		        </Grid>
-		        <Grid item xs={4}>
-		          	<img className={classes.iconimg} src={icon2} alt="" />
-	      			<p className={classes.title5}>完整项目模板</p>
-		        </Grid>
-		        <Grid item xs={4}>
-		          	<img className={classes.iconimg} src={icon3} alt="" />
-	      			<p className={classes.title5}>完整项目模板</p>
-		        </Grid>
-		      </Grid>
+  		        <Grid item xs={4}>
+  		          	<img className={classes.iconimg} src={icon1} alt="" />
+  	      			<p className={classes.title5}>完整项目模板</p>
+  		        </Grid>
+  		        <Grid item xs={4}>
+  		          	<img className={classes.iconimg} src={icon2} alt="" />
+  	      			<p className={classes.title5}>完整项目模板</p>
+  		        </Grid>
+  		        <Grid item xs={4}>
+  		          	<img className={classes.iconimg} src={icon3} alt="" />
+  	      			<p className={classes.title5}>完整项目模板</p>
+  		        </Grid>
+  		      </Grid>
 	      	</div>
 	      </div>
 	      <div className={classes.bluecontent}>

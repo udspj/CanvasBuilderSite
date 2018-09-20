@@ -6,6 +6,7 @@ import cb from "./cb";
 import Header from "./components/HeaderBar";
 import Footer from "./components/FooterBar";
 import HomePage from "./pages/HomePage";
+import VideoListPage from "./pages/VideoListPage";
 
 class App extends Component {
   render() {
@@ -16,10 +17,11 @@ class App extends Component {
             <Header />
 
             <Switch>
-              <Route exact path="/" component={HomePage} />
+              <Route exact path="/" component={VideoListPage} />
               <Route path="/ca" component={ca} />
               <Route path="/cb" component={cb} />
               <Route path="/home" component={HomePage} />
+              <Route path="/videolist" component={VideoListPage} />
             </Switch>
 
             <Footer />
