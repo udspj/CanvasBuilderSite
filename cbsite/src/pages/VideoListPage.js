@@ -8,6 +8,7 @@ import eye from "../resource/eye.png";
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import Grid from '@material-ui/core/Grid';
+import Fade from '@material-ui/core/Fade';
 
 const styles = theme => ({
   gridList: {
@@ -68,17 +69,21 @@ class VideoListPage extends Component {
     constructor() {
         super()
         this.state = {
+    checked: true,
         }
     }
 
   render() {
     const {classes} = this.props;
+    const { checked } = this.state;
     return (
       <div className={classes.bkdiv}>
 
       	<GridList className={classes.gridList} cellHeight={250} cols={4} spacing={30}>   		
-    			{listdata.map(tile => (
+    			{listdata.map((tile,reactid) => ( 
     				<GridListTile key={tile}>
+            <Fade in={checked}
+            {...(checked ? { timeout: 500 } : {})} style={{ transitionDelay: checked ? 200*reactid : 0 }}>
     					<div className={classes.gridtile}>
     						<div>
     							<img width='100%' height={100} src="https://material-ui.com/static/images/grid-list/breakfast.jpg" alt="sdfsad" />
@@ -97,6 +102,7 @@ class VideoListPage extends Component {
     						<div className={classes.line}></div>
     						<p className={classes.content} align="left"> 描述描述描述描述描述描述，描述描述描述描述描述描述，描述描述，描述描述描述描述 </p>
     					</div>
+            </Fade>
     				</GridListTile>
 	        ))}
         </GridList>
