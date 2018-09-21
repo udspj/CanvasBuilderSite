@@ -69,7 +69,7 @@ class VideoListPage extends Component {
     constructor() {
         super()
         this.state = {
-    checked: true,
+          checked: true
         }
     }
 
