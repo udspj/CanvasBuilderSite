@@ -26,16 +26,16 @@ const styles = theme => ({
     padding: '20px'
   },
   bar: {
-    position: 'absolute',
-    left: 0,
-    right: 0
+    // position: 'absolute',
+    // left: 0,
+    // right: 0
   },
   grid: {
     backgroundColor: '#e1e1e1',
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: 104
+    // position: 'absolute',
+    // left: 0,
+    // right: 0,
+    // top: 104
   }
 })
 
@@ -53,11 +53,13 @@ class DocumentPage extends Component {
     return (
       <div className={classes.bkdiv}>
 
+        <ListTabBar className={classes.bar} />
+
         <Grid className={classes.grid} container direction="row" justify="center" alignItems="flex-start">
             <Grid item xs={3}>
                 <List className={classes.list}>
-                  {listdata.map(tile => (
-                    <ListItem button>
+                  {listdata.map((tile,reactid) => (
+                    <ListItem button key={reactid}>
                       <img src={documentIcon} alt=''/>
                       <ListItemText primary="Photos" secondary="Jan 9, 2014" />
                     </ListItem>
@@ -70,8 +72,6 @@ class DocumentPage extends Component {
                 </div>
             </Grid>
         </Grid>
-
-        <ListTabBar className={classes.bar} />
         
       </div>
     );

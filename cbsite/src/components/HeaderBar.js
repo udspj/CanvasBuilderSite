@@ -15,7 +15,7 @@ import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import MenuItem from '@material-ui/core/MenuItem';
-import MenuList from '@material-ui/core/MenuList';
+import Menu from '@material-ui/core/Menu';
 
 const styles = theme => ({
   appBar: {
@@ -36,6 +36,7 @@ class HeaderBar extends Component {
         super()
         this.state = {
         	open: false,
+    		anchorEl: null,
             value: 0
         }
     }
@@ -46,6 +47,7 @@ class HeaderBar extends Component {
 
 	handleToggle(event) {
 	    this.setState({ open: !this.state.open });
+    	this.setState({ anchorEl: event.currentTarget });
 	};
 
 	handleClose(index) {
@@ -54,10 +56,12 @@ class HeaderBar extends Component {
 		// }
 		console.log(index)
 		this.setState({ open: false });
+    	this.setState({ anchorEl: null });
 	};
 
   render() {
     const {classes} = this.props;
+    const { anchorEl } = this.state;
     return (
       <div>
 
@@ -84,24 +88,16 @@ class HeaderBar extends Component {
 		        >
 		            Toggle Menu Grow
 		        </Button>
-		        <Popper open={this.state.open} anchorEl={this.anchorEl} transition disablePortal>
-		            {({ TransitionProps, placement }) => (
-		              <Grow
-		                {...TransitionProps}
-		                id="menu-list-grow"
-		                style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-		              >
-		                <Paper>
-		                  <ClickAwayListener onClickAway={this.handleClose.bind(this,0)}>
-		                    <MenuList>
-		                      <MenuItem onClick={this.handleClose.bind(this,1)}>Profile</MenuItem>
-		                      <MenuItem onClick={this.handleClose.bind(this,2)}>My account</MenuItem>
-		                    </MenuList>
-		                  </ClickAwayListener>
-		                </Paper>
-		              </Grow>
-		            )}
-		        </Popper>
+		        <Menu
+		          id="simple-menu"
+		          anchorEl={anchorEl}
+		          open={Boolean(anchorEl)}
+		          onClose={this.handleClose.bind(this)}
+		        >
+		          <MenuItem onClick={this.handleClose.bind(this,1)}>Profile</MenuItem>
+		          <MenuItem onClick={this.handleClose.bind(this,2)}>My account</MenuItem>
+		          <MenuItem onClick={this.handleClose.bind(this,3)}>Logout</MenuItem>
+		        </Menu>
 		      </div>
 
         	</Toolbar>

@@ -18,10 +18,10 @@ const styles = theme => ({
     paddingLeft: '60px',
     paddingRight: '60px',
     backgroundColor: '#e1e1e1',
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: 119
+    // position: 'absolute',
+    // left: 0,
+    // right: 0,
+    // top: 119
   },
   gridtile: {
   	backgroundColor: '#fff',
@@ -31,9 +31,9 @@ const styles = theme => ({
   	backgroundColor: '#e1e1e1'
   },
   bar: {
-    position: 'absolute',
-    left: 0,
-    right: 0
+    // position: 'absolute',
+    // left: 0,
+    // right: 0
   }
 })
 
@@ -63,22 +63,24 @@ class VideoListPage extends Component {
     }
     return (
       <div className={classes.bkdiv}>
-
-      	<GridList className={classes.gridList} cellHeight={250} cols={4} spacing={30}>   		
-    			{listdata.map((tile,reactid) => ( 
-    				<GridListTile key={tile}>
-              <Fade in={checked}
-              {...(checked ? { timeout: 500 } : {})} style={{ transitionDelay: checked ? 200*reactid : 0 }}>
-                <div>
-                  <VideoGridTile />
-                </div>
-              </Fade>
-    				</GridListTile>
-	        ))}
-        </GridList>
       
         <ListTabBar className={classes.bar} />
 
+        <div className={classes.gridList}>
+        	<GridList cellHeight={250} cols={4} spacing={30}>   		
+      			{listdata.map((tile,reactid) => ( 
+      				<GridListTile key={reactid}>
+                <Fade in={checked}
+                {...(checked ? { timeout: 500 } : {})} style={{ transitionDelay: checked ? 200*reactid : 0 }}>
+                  <div>
+                    <VideoGridTile />
+                  </div>
+                </Fade>
+      				</GridListTile>
+  	        ))}
+          </GridList>
+        </div>
+        
       </div>
     );
   }
