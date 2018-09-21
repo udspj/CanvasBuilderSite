@@ -27,10 +27,10 @@ class FooterBar extends Component {
       <div className={classes.bkdiv}>
 
         <AppBar position="static" color="default" className={classes.appBar}>
-          <Toolbar>
+
             <p className={classes.copyright}>copyright</p>
 
-          </Toolbar>
+
         </AppBar>
 
       </div>
