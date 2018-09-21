@@ -40,6 +40,9 @@ const styles = theme => ({
   iconcontent: {
     paddingLeft: '50px',
     paddingRight: '50px'
+  },
+  bkdiv: {
+    minHeight: '65vh'
   }
 })
 
