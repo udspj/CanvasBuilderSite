@@ -3,7 +3,8 @@ import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import homebk1 from "../resource/homebk1.jpg";
 import logo from "../resource/logopage.png";
-import homebk2 from "../resource/homebk2.jpg";
+import homebk21 from "../resource/homebk2_1.jpg";
+import homebk22 from "../resource/homebk2_2.jpg";
 import homebk3 from "../resource/homebk3.jpg";
 import blueimg from "../resource/blueimg.png";
 import icon1 from "../resource/homeicon1.png";
@@ -44,12 +45,16 @@ const styles = theme => ({
   	borderRadius:'20px',
   	borderColor: '#fff'
   },
-  section2: {
-    backgroundImage: `url(${homebk2})`,
-    textColor: '#fff',
+  section21: {
+    backgroundImage: `url(${homebk21})`,
     backgroundSize: 'cover',
-    paddingBottom: '50px',
-    marginBottom: '30px'
+    backgroundRepeat: 'no-repeat',
+    textColor: '#fff',
+    width: '100%',
+    height: '51vw',
+    alignItems:'center',
+    justifyContent:'center',
+    display:'-webkit-flex'
   },
   card1: {
   	marginTop: '50px',
@@ -66,6 +71,13 @@ const styles = theme => ({
   card4: {
   	marginTop: '280px',
   	marginLeft: '30px'
+  },
+  section22: {
+    backgroundImage: `url(${homebk22})`,
+    textColor: '#fff',
+    backgroundSize: 'cover',
+    paddingBottom: '50px',
+    marginBottom: '30px'
   },
   // prodimgdiv: {
   // 	width: '28vw',
@@ -162,7 +174,7 @@ class HomePage extends Component {
         </Button>
       </section>
 
-      <section className={classes.section2}>
+      <section className={classes.section21}>
       	<Grid container direction="row" justify="center" alignItems="flex-start">
 	        <Grid item xs={3}>
 	          <div className={classes.card1} >
@@ -185,20 +197,23 @@ class HomePage extends Component {
 	          </div>
 	        </Grid>
 	      </Grid>
-      	  <Grid container direction="row" justify="center" alignItems="flex-start">
-	        <Grid item xs={4}>
+      </section>
+
+      <section className={classes.section22}>
+        <Grid container direction="row" justify="center" alignItems="flex-start">
+          <Grid item xs={4}>
             <div className="prodimgdiv" >
             </div>
-	        </Grid>
-	        <Grid item xs={4}>
+          </Grid>
+          <Grid item xs={4}>
             <div className="prodimgdiv" >
             </div>
-	        </Grid>
-	        <Grid item xs={4}>
+          </Grid>
+          <Grid item xs={4}>
             <div className="prodimgdiv" >
             </div>
-	        </Grid>
-	      </Grid>
+          </Grid>
+        </Grid>
       </section>
 
       <section>
