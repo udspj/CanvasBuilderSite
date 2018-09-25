@@ -19,6 +19,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 const styles = theme => ({
+  tabRoot: {
+    minWidth: 100,
+  },
   indicator: {
     backgroundColor: '#3fc2ff',
   },
@@ -75,14 +78,15 @@ class HeaderBar extends Component {
 	          <img src={iconimg} alt="iconimg" />
 
 		        <Tabs className={classes.menuButtonGroup} classes={{indicator: classes.indicator}}
+		        tabItemContainerStyle={{width: '400px'}}
 		          value={this.state.value}
 		          onChange={this.handleChange.bind(this)}
 		        >
-		          <Tab className={classes.menuText} label="Features" component={Link} to="/home"/>
-		          <Tab className={classes.menuText} label="Disabled" component={Link} to="/videolist"/>
-		          <Tab className={classes.menuText} label="Active" component={Link} to="/document"/>
-		          <Tab className={classes.menuText} label="Active" component={Link} to="/cb"/>
-		          <Tab className={classes.menuText} label="Active" component={Link} to="/about"/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Features" component={Link} to="/home"/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Disabled" component={Link} to="/videolist"/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/document"/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/cb"/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/about"/>
 		        </Tabs>
 
 	          <div>
