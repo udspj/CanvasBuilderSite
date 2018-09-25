@@ -21,8 +21,14 @@ const styles = {
   line: {
   	width: '100%',
   	height: '2px',
-  	background: '#E0E0E0',
+  	background: '#808fb9',
   	marginBottom: '5px'
+  },
+  title: {
+    color: '#808fb9'
+  },
+  content: {
+    color: '#666'
   }
 };
 
@@ -34,11 +40,11 @@ class HomeCard extends Component {
 		<Card className={classes.card}>
 			<CardActionArea>
 				<CardContent>
-					<Typography gutterBottom variant="headline" component="h2">
+					<Typography className={classes.title} gutterBottom variant="headline" component="h2">
 						Lizard
 					</Typography>
 					<div className={classes.line}></div>
-					<Typography component="p">
+					<Typography className={classes.content} component="p">
 						Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
 						across all continents except Antarctica
 					</Typography>

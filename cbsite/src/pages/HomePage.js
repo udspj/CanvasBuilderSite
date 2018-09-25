@@ -105,10 +105,18 @@ const styles = theme => ({
   line: {
   	width: '20%',
   	height: '2px',
-  	background: '#808fb9',
+  	background: '#fff',
   	marginLeft: 'auto',
   	marginRight: 'auto',
   	marginBottom: '50px'
+  },
+  linedard: {
+    width: '20%',
+    height: '2px',
+    background: '#808fb9',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginBottom: '50px'
   },
   bluecontent: {
   	padding: '50px'
@@ -228,7 +236,7 @@ class HomePage extends Component {
 	      </div>
 	      <div className={classes.whitecontent}>
 	      	<p className={classes.title4}>网络游戏开发</p>
-	      	<div className={classes.line}></div>
+	      	<div className={classes.linedard}></div>
 	      	<img className={classes.shapes} src={shapes} alt="" />
 	      	<div className={classes.linelong}></div>
 	      	<p className={classes.title4}>网络游戏开发</p>
