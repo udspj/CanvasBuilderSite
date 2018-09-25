@@ -74,10 +74,14 @@ const styles = theme => ({
   },
   section22: {
     backgroundImage: `url(${homebk22})`,
-    textColor: '#fff',
     backgroundSize: 'cover',
-    paddingBottom: '50px',
-    marginBottom: '30px'
+    backgroundRepeat: 'no-repeat',
+    textColor: '#fff',
+    width: '100%',
+    height: '40vw',
+    alignItems:'center',
+    justifyContent:'center',
+    display:'-webkit-flex'
   },
   // prodimgdiv: {
   // 	width: '28vw',

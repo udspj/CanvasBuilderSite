@@ -27,7 +27,7 @@ filter: alpha(opacity=100,finishopacity=0,style=2);
     background: url(https://wx3.sinaimg.cn/mw690/005I51QUly1fvex057paaj30w90qj17s.jpg) 50%/cover;
     /* WebKit-only solution */
     
-    -webkit-box-reflect: below 10px linear-gradient(transparent 80%, rgba(0,0,0,.5));
+    -webkit-box-reflect: below 10px linear-gradient(transparent 85%, rgba(0,0,0,.5));
     /**/
     /* Firefox-only solution */
 }
