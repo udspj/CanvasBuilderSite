@@ -184,7 +184,7 @@ class HomePage extends Component {
       scrollToComponent(this.refs.autoscroll, {
           align: 'top',
           ease: 'linear',
-          duration: 500
+          duration: 300
         });
     }
   }
