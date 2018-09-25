@@ -19,11 +19,11 @@ class App extends Component {
             <Header />
 
             <Switch>
-              <Route exact path="/CanvasBuilderSite/" component={HomePage} />
-              <Route path="/CanvasBuilderSite/home" component={HomePage} />
-              <Route path="/CanvasBuilderSite/videolist" component={VideoListPage} />
-              <Route path="/CanvasBuilderSite/document" component={DocumentPage} />
-              <Route path="/CanvasBuilderSite/about" component={AboutPage} />
+              <Route exact path="/" component={HomePage} />
+              <Route path="/home" component={HomePage} />
+              <Route path="/videolist" component={VideoListPage} />
+              <Route path="/document" component={DocumentPage} />
+              <Route path="/about" component={AboutPage} />
             </Switch>
 
             <Footer />
