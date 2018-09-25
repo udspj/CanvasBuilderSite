@@ -81,11 +81,11 @@ class HeaderBar extends Component {
 		          value={this.state.value}
 		          onChange={this.handleChange.bind(this)}
 		        >
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Features" component={Link} to="/home"/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Disabled" component={Link} to="/videolist"/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/document"/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/cb"/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/about"/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Features" component={Link} to="/CanvasBuilderSite/home"/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Disabled" component={Link} to="/CanvasBuilderSite/videolist"/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/document"/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/cb"/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/about"/>
 		        </Tabs>
 
 	          <div>
