@@ -8,8 +8,6 @@ import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
@@ -17,12 +15,19 @@ import Popper from '@material-ui/core/Popper';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+
 const styles = theme => ({
+  indicator: {
+    backgroundColor: '#3fc2ff',
+  },
   appBar: {
     backgroundColor: '#000',
     textColor: '#fff'
   },
   menuButtonGroup: {
+    indicatorColor: '#cc00ff',
   	marginLeft: 'auto',
   	marginRight: 'auto'
   },
@@ -68,14 +73,18 @@ class HeaderBar extends Component {
 	      <AppBar position="static" color="default" className={classes.appBar}>
 	        <Toolbar>
 	          <img src={iconimg} alt="iconimg" />
-	          <div className={classes.menuButtonGroup}>
-		          <Button className={classes.menuText} component={Link} to="/home">Features</Button>
-		          <Button className={classes.menuText} component={Link} to="/videolist">Enterprise</Button>
-		          <Button className={classes.menuText} component={Link} to="/document">Support</Button>
-		          <Button className={classes.menuText} component={Link} to="/cb">Support</Button>
-		          <Button className={classes.menuText} component={Link} to="/about">Support</Button>
-	          </div>
-	          
+
+		        <Tabs className={classes.menuButtonGroup} classes={{indicator: classes.indicator}}
+		          value={this.state.value}
+		          onChange={this.handleChange.bind(this)}
+		        >
+		          <Tab className={classes.menuText} label="Features" component={Link} to="/home"/>
+		          <Tab className={classes.menuText} label="Disabled" component={Link} to="/videolist"/>
+		          <Tab className={classes.menuText} label="Active" component={Link} to="/document"/>
+		          <Tab className={classes.menuText} label="Active" component={Link} to="/cb"/>
+		          <Tab className={classes.menuText} label="Active" component={Link} to="/about"/>
+		        </Tabs>
+
 	          <div>
 		        <Button
 		            buttonRef={node => {
@@ -108,6 +117,14 @@ class HeaderBar extends Component {
   }
 
 }
+
+	          // <div className={classes.menuButtonGroup}>
+		          // <Button className={classes.menuText} component={Link} to="/home">Features</Button>
+		          // <Button className={classes.menuText} component={Link} to="/videolist">Enterprise</Button>
+		          // <Button className={classes.menuText} component={Link} to="/document">Support</Button>
+		          // <Button className={classes.menuText} component={Link} to="/cb">Support</Button>
+		          // <Button className={classes.menuText} component={Link} to="/about">Support</Button>
+	          // </div>
 
 HeaderBar.propTypes = {
   classes: PropTypes.object.isRequired
