@@ -18,6 +18,7 @@ import Grid from '@material-ui/core/Grid';
 import HomeCard from '../components/HomeCard';
 
 import './home.css';
+import scrollToComponent from 'react-scroll-to-component';
 
 const styles = theme => ({
   section1: {
@@ -25,10 +26,13 @@ const styles = theme => ({
     textColor: '#fff',
     backgroundSize: '100%',
     height: '100vh',
-    minHeight: '550px'
+    minHeight: '550px',
+    alignItems:'center',
+    justifyContent:'center',
+    display:'-webkit-flex'
   },
   logo: {
-  	marginTop: '80px'
+  	// marginTop: '80px'
   },
   title1: {
   	fontSize: '36px',
@@ -172,21 +176,36 @@ class HomePage extends Component {
         }
     }
 
+  onWheel(e) {
+    // this.refs.hello.scrollIntoView(true, {
+    //     behavior: 'smooth', block: 'center'
+    //   });
+    if (e.deltaY > 0) {
+      scrollToComponent(this.refs.autoscroll, {
+          align: 'top',
+          ease: 'linear',
+          duration: 500
+        });
+    }
+  }
+
   render() {
     const {classes} = this.props;
     return (
       <div className={classes.bk}>
 
-      <section className={classes.section1}>
-      	<img className={classes.logo} src={logo} alt="iconimg" />
-      	<p className={classes.title1}>HTML5 游戏和应用的集成开发环境</p>
-      	<p className={classes.title2}>JAVASCRIPT / TYPESCRIPT</p>
-      	<Button className={classes.dlbtn} variant="outlined" size="large" color="default">
-          免费下载
-        </Button>
+      <section className={classes.section1} onWheel={this.onWheel.bind(this)}>
+        <div>
+        	<img className={classes.logo} src={logo} alt="iconimg" />
+        	<p className={classes.title1}>HTML5 游戏和应用的集成开发环境</p>
+        	<p className={classes.title2}>JAVASCRIPT / TYPESCRIPT</p>
+        	<Button className={classes.dlbtn} variant="outlined" size="large" color="default">
+            免费下载
+          </Button>
+        </div>
       </section>
 
-      <section className={classes.section21}>
+      <section className={classes.section21} ref="autoscroll">
       	<Grid container direction="row" justify="center" alignItems="flex-start">
 	        <Grid item xs={3}>
 	          <div className={classes.card1} >

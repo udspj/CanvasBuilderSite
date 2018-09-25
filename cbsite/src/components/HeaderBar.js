@@ -78,7 +78,6 @@ class HeaderBar extends Component {
 	          <img src={iconimg} alt="iconimg" />
 
 		        <Tabs className={classes.menuButtonGroup} classes={{indicator: classes.indicator}}
-		        tabItemContainerStyle={{width: '400px'}}
 		          value={this.state.value}
 		          onChange={this.handleChange.bind(this)}
 		        >
