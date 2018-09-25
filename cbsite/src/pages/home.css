@@ -1,0 +1,50 @@
+/*
+  .Test {
+
+    width: 28vw;
+    height: 8vw;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  background-image: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0));
+        transform: scaleY(-1);
+  },
+  .Testimg {
+    width: 100%;
+  mix-blend-mode: overlay;
+filter: alpha(opacity=100,finishopacity=0,style=2);
+  }*/
+
+.prodimgdiv {
+    /*position: relative;*/
+    width: 28vw;
+    height: 28vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(https://wx3.sinaimg.cn/mw690/005I51QUly1fvex057paaj30w90qj17s.jpg) 50%/cover;
+    /* WebKit-only solution */
+    
+    -webkit-box-reflect: below 10px linear-gradient(transparent 80%, rgba(0,0,0,.5));
+    /**/
+    /* Firefox-only solution */
+}
+
+.blueimg {
+    width: 853px;
+    height: 456px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 22px 0px #333;
+
+    background: url(../resource/blueimg.png) 50%/cover;
+    /* WebKit-only solution */
+    
+    -webkit-box-reflect: below 10px linear-gradient(transparent 80%, rgba(0,0,0,.5));
+    /**/
+    /* Firefox-only solution */
+}

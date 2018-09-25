@@ -14,7 +14,9 @@ import shapes from "../resource/homeshape.png";
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
-import HomeCard from '../components/HomeCard'
+import HomeCard from '../components/HomeCard';
+
+import './home.css';
 
 const styles = theme => ({
   section1: {
@@ -65,18 +67,18 @@ const styles = theme => ({
   	marginTop: '280px',
   	marginLeft: '30px'
   },
-  prodimgdiv: {
-  	width: '28vw',
-  	height: '28vw',
-  	backgroundColor: '#cc00ff',
-  	marginTop: '50px',
-  	marginLeft: 'auto',
-  	marginRight: 'auto'
-  },
-  prodimg: {
-  	width: '100%',
-  	height: '100%',
-  },
+  // prodimgdiv: {
+  // 	width: '28vw',
+  // 	height: '28vw',
+  // 	// backgroundColor: '#cc00ff',
+  // 	marginTop: '50px',
+  // 	marginLeft: 'auto',
+  // 	marginRight: 'auto'
+  // },
+  // prodimg: {
+  // 	width: '100%',
+  // 	height: '100%',
+  // },
   bk: {
     backgroundImage: `url(${homebk3})`,
     textColor: '#fff',
@@ -134,7 +136,7 @@ const styles = theme => ({
   shapes: {
   	marginTop: '50px',
   	marginBottom: '50px'
-  }
+  },
 })
 
 class HomePage extends Component {
@@ -185,19 +187,16 @@ class HomePage extends Component {
 	      </Grid>
       	  <Grid container direction="row" justify="center" alignItems="flex-start">
 	        <Grid item xs={4}>
-	          <div className={classes.prodimgdiv} >
-	          	<img className={classes.prodimg} src="https://wx3.sinaimg.cn/mw690/005I51QUly1fvex057paaj30w90qj17s.jpg" alt="" />
-	          </div>
+            <div className="prodimgdiv" >
+            </div>
 	        </Grid>
 	        <Grid item xs={4}>
-	          <div className={classes.prodimgdiv} >
-	          	<img className={classes.prodimg} src="https://wx3.sinaimg.cn/mw690/005I51QUly1fvex057paaj30w90qj17s.jpg" alt="" />
-	          </div>
+            <div className="prodimgdiv" >
+            </div>
 	        </Grid>
 	        <Grid item xs={4}>
-	          <div className={classes.prodimgdiv} >
-	          	<img className={classes.prodimg} src="https://wx3.sinaimg.cn/mw690/005I51QUly1fvex057paaj30w90qj17s.jpg" alt="" />
-	          </div>
+            <div className="prodimgdiv" >
+            </div>
 	        </Grid>
 	      </Grid>
       </section>
@@ -206,7 +205,7 @@ class HomePage extends Component {
 	      <div className={classes.bluecontent}>
 	      	<p className={classes.title3}>网络游戏开发</p>
 	      	<div className={classes.line}></div>
-	      	<img className={classes.blueimg} src={blueimg} alt="" />
+          <div className="blueimg" />
 	      </div>
 	      <div className={classes.whitecontent}>
 	      	<p className={classes.title4}>网络游戏开发</p>
@@ -235,12 +234,12 @@ class HomePage extends Component {
 	      <div className={classes.bluecontent}>
 	      	<p className={classes.title3}>网络游戏开发</p>
 	      	<div className={classes.line}></div>
-	      	<img className={classes.blueimg} src={blueimg} alt="" />
+          <div className="blueimg" />
 	      </div>
 	      <div className={classes.bluecontent}>
 	      	<p className={classes.title3}>网络游戏开发</p>
 	      	<div className={classes.line}></div>
-	      	<img className={classes.blueimg} src={blueimg} alt="" />
+          <div className="blueimg" />
 	      </div>
       </section>
 
