@@ -16,7 +16,7 @@ install:
   - npm install -g yarn
 
 script:
-  - cd cbsite && yarn build
+  - cd cbsite && yarn install && yarn build
 
 deploy:
   provider: pages
