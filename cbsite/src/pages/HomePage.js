@@ -99,13 +99,13 @@ const styles = theme => ({
   // 	width: '100%',
   // 	height: '100%',
   // },
-  bk: {
-    backgroundImage: `url(${homebk3})`,
-    textColor: '#fff',
-    backgroundSize: '100%',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed'
-  },
+  // bk: {
+  //   backgroundImage: `url(${homebk3})`,
+  //   textColor: '#fff',
+  //   backgroundSize: '100%',
+  //   backgroundRepeat: 'no-repeat',
+  //   backgroundAttachment: 'fixed'
+  // },
   line: {
   	width: '20%',
   	height: '2px',
@@ -184,7 +184,7 @@ class HomePage extends Component {
       scrollToComponent(this.refs.autoscroll, {
           align: 'top',
           ease: 'linear',
-          duration: 300
+          duration: 200
         });
     }
   }
@@ -192,7 +192,7 @@ class HomePage extends Component {
   render() {
     const {classes} = this.props;
     return (
-      <div className={classes.bk}>
+      <div className="bk">
 
       <section className={classes.section1} onWheel={this.onWheel.bind(this)}>
         <div>
