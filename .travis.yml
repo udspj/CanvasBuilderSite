@@ -16,7 +16,7 @@ install:
   - npm install -g yarn
 
 script:
-  - cd cbsite && yarn install && CI=false yarn build
+  - cd cbsite && yarn install && CI=false yarn build --base-href https://blog.sycx.me/CanvasBuilderSite/
 
 deploy:
   provider: pages
