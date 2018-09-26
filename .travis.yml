@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - "9"
+
+branches:
+  only:
+    - master
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+    - cbsite/node_modules
+
+install:
+  - npm install -g yarn
+
+script:
+  - cd cbsite && yarn install && CI=false yarn build --base-href https://blog.sycx.me/CanvasBuilderSite/
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: cbsite/build
+  on:
+    branch: master
