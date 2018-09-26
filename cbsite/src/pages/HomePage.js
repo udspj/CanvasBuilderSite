@@ -18,7 +18,8 @@ import Grid from '@material-ui/core/Grid';
 import HomeCard from '../components/HomeCard';
 
 import './home.css';
-import scrollToComponent from 'react-scroll-to-component';
+// import scrollToComponent from 'react-scroll-to-component';
+// import scrollIntoView from 'scroll-into-view-if-needed'
 
 const styles = theme => ({
   section1: {
@@ -168,33 +169,38 @@ const styles = theme => ({
 })
 
 class HomePage extends Component {
-    constructor() {
-        super()
-        this.state = {
-        	open: false,
-            value: 0
-        }
-    }
-
-  onWheel(e) {
-    // this.refs.hello.scrollIntoView(true, {
-    //     behavior: 'smooth', block: 'center'
-    //   });
-    if (e.deltaY > 0) {
-      scrollToComponent(this.refs.autoscroll, {
-          align: 'top',
-          ease: 'linear',
-          duration: 200
-        });
+  constructor() {
+    super()
+    this.state = {
+    	open: false,
+        value: 0
     }
   }
+
+  componentWillMount() {
+    // document.body.style.overflow='hidden';
+  }
+
+  onWheel(e) {
+    if (e.deltaY > 0) {
+      // scrollToComponent(this.refs.autoscroll, {
+      //   align: 'top',
+      //   ease: 'linear',
+      //   duration: 200
+      // });
+      // scrollIntoView(this.refs.autoscroll, {
+      //   behavior: 'smooth', scrollMode: 'if-needed'
+      // });
+    }
+  }
+  // onWheel={this.onWheel.bind(this)}
 
   render() {
     const {classes} = this.props;
     return (
       <div className="bk">
 
-      <section className={classes.section1} onWheel={this.onWheel.bind(this)}>
+      <section className={classes.section1}>
         <div>
         	<img className={classes.logo} src={logo} alt="iconimg" />
         	<p className={classes.title1}>HTML5 游戏和应用的集成开发环境</p>
