@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "9"
+
+branches:
+  only:
+    - master
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+    - cbsite/node_modules
+
+script:
+  - cd cbsite
+  - yarn build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: cbsite/build
+  on:
+    branch: master
