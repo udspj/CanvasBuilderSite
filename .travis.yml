@@ -12,9 +12,11 @@ cache:
     - node_modules
     - cbsite/node_modules
 
+install:
+  - npm install -g yarn
+
 script:
-  - cd cbsite
-  - yarn build
+  - cd cbsite && yarn build
 
 deploy:
   provider: pages
