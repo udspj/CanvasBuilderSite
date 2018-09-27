@@ -20,6 +20,12 @@ import HomeCard from '../components/HomeCard';
 import './home.css';
 // import scrollToComponent from 'react-scroll-to-component';
 // import scrollIntoView from 'scroll-into-view-if-needed'
+import animeicon1 from "../resource/icon1.png";
+import animeicon2 from "../resource/icon2.png";
+import animeicon3 from "../resource/icon3.png";
+import animeicon4 from "../resource/icon4.png";
+import animeicon5 from "../resource/icon5.png";
+import animeicon6 from "../resource/icon6.png";
 
 const styles = theme => ({
   section1: {
@@ -167,18 +173,33 @@ const styles = theme => ({
   	marginBottom: '50px'
   },
 })
+// const listdata = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
 
 class HomePage extends Component {
   constructor() {
     super()
     this.state = {
-    	open: false,
-        value: 0
+    	listdata: []
     }
   }
 
   componentWillMount() {
     // document.body.style.overflow='hidden';
+    var listdata = [];
+    for (var i = 30; i >= 0; i--) {
+        const randx = Math.ceil(Math.random()*100);
+        const randy = Math.ceil(Math.random()*50);
+        const randimg = Math.floor(Math.random()*3.9)+1;
+        const randicon = Math.floor(Math.random()*5.9);
+        const icons = [animeicon1,animeicon2,animeicon3,animeicon4,animeicon5,animeicon6];
+        const randscale = Math.random()*0.5+0.5;
+        const randrotate = Math.random()*180-90;
+        const time = Math.random()*2+8;
+        const randmove = Math.floor(Math.random()*3.9);
+        const moves = ['movea','moveb','movec','moved'];
+        listdata.push({'move':moves[randmove],'time':time,'randx':randx,'randy':randy,'classname':'img'+randimg,'icontype':icons[randicon],'scale':randscale,'rotate':randrotate});
+    }
+    this.setState({ listdata });
   }
 
   onWheel(e) {
@@ -199,6 +220,24 @@ class HomePage extends Component {
     const {classes} = this.props;
     return (
       <div className="bk">
+      <div className="bk2"> 
+        {this.state.listdata.map((data,reactid) => ( 
+          <div style={{
+                position: 'absolute',
+                bottom:data.randy+'%',
+                left: data.randx+'%',
+                Transform: 'rotate('+data.rotate+'deg) scale('+data.scale+')',
+                WebkitTransform: 'rotate('+data.rotate+'deg) scale('+data.scale+')',
+                opacity: 0.2
+              }} key={reactid}>
+            <img style={{position: 'absolute',
+                top:'0px',
+                left: '0px',
+                animation: data.time+'s '+data.move+' alternate infinite linear'}} 
+                src={data.icontype} alt="iconimg" />
+          </div>
+        ))}
+      </div>
 
       <section className={classes.section1}>
         <div>
