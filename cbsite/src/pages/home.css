@@ -145,3 +145,147 @@ filter: alpha(opacity=100,finishopacity=0,style=2);
     left: 0px;
     animation: 10s moved alternate infinite linear;
 }
+
+@keyframes circleAaanime {
+  0% { width: 100px; height: 100px; opacity: 0; }
+  50% { width: 200px; height: 200px; opacity: 0.2; }
+  100% { width: 300px; height: 300px; opacity: 0; }
+}
+.circleA1 {
+    position: absolute;
+    border: 10px solid #fff;
+    background-color: #ffffff00;
+    opacity: 0.2;
+    width: 100px;
+    height: 100px;
+    bottom: -50px;
+    left: -70px;
+    border-radius: 50%;
+    animation: 3s circleAaanime infinite linear;
+}
+
+@keyframes circleAbanime {
+  0% { width: 150px; height: 150px; opacity: 0; }
+  50% { width: 250px; height: 250px; opacity: 0.2; }
+  100% { width: 350px; height: 350px; opacity: 0; }
+}
+.circleA2 {
+    position: absolute;
+    border: 3px solid #fff;
+    background-color: #ffffff00;
+    opacity: 0.2;
+    width: 150px;
+    height: 150px;
+    bottom: -60px;
+    left: -80px;
+    border-radius: 50%;
+    animation: 3s circleAbanime infinite linear;
+}
+
+@keyframes circleAcanime {
+  0% { width: 100px; height: 100px; opacity: 0; }
+  50% { width: 150px; height: 150px; opacity: 0.2; }
+  100% { width: 200px; height: 200px; opacity: 0; }
+}
+.circleA3 {
+    position: absolute;
+    border: 3px solid #fff;
+    background-color: #ffffff00;
+    opacity: 0.2;
+    width: 100px;
+    height: 100px;
+    bottom: -50px;
+    left: 150px;
+    border-radius: 50%;
+    animation: 3s circleAcanime infinite linear;
+}
+
+@keyframes circleBaanime {
+  0% { width: 100px; height: 100px; opacity: 0; }
+  50% { width: 150px; height: 150px; opacity: 0.2; }
+  100% { width: 200px; height: 200px; opacity: 0; }
+}
+.circleB1 {
+    position: absolute;
+    border: 3px solid #fff;
+    background-color: #ffffff00;
+    opacity: 0.2;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    animation: 3s circleBaanime infinite linear;
+}
+
+@keyframes circleBbanime {
+  0% { width: 50px; height: 50px; opacity: 0; }
+  50% { width: 75px; height: 75px; opacity: 0.2; }
+  100% { width: 100px; height: 100px; opacity: 0; }
+}
+.circleB2 {
+    position: absolute;
+    border: 10px solid #fff;
+    background-color: #ffffff00;
+    opacity: 0.2;
+    width: 50px;
+    height: 50px;
+    top: 125px;
+    left: 150px;
+    border-radius: 50%;
+    animation: 3s circleBbanime infinite linear;
+}
+
+@keyframes circleCaanime {
+  0% { width: 50px; height: 50px; opacity: 0; }
+  50% { width: 75px; height: 75px; opacity: 0.2; }
+  100% { width: 100px; height: 100px; opacity: 0; }
+}
+.circleC1 {
+    position: absolute;
+    border: 10px solid #fff;
+    background-color: #ffffff00;
+    opacity: 0.2;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    right: 20px;
+    border-radius: 50%;
+    animation: 3s circleCaanime infinite linear;
+}
+
+@keyframes circleCbanime {
+  0% { width: 80px; height: 80px; opacity: 0; }
+  50% { width: 120px; height: 120px; opacity: 0.2; }
+  100% { width: 160px; height: 160px; opacity: 0; }
+}
+.circleC2 {
+    position: absolute;
+    border: 3px solid #fff;
+    background-color: #ffffff00;
+    opacity: 0.2;
+    width: 80px;
+    height: 80px;
+    top: -50px;
+    right: 50px;
+    border-radius: 50%;
+    animation: 3s circleCbanime infinite linear;
+}
+
+@keyframes circleCcanime {
+  0% { width: 100px; height: 100px; opacity: 0; }
+  50% { width: 130px; height: 130px; opacity: 0.2; }
+  100% { width: 160px; height: 160px; opacity: 0; }
+}
+.circleC3 {
+    position: absolute;
+    border: 3px solid #fff;
+    background-color: #ffffff00;
+    opacity: 0.2;
+    width: 100px;
+    height: 100px;
+    top: -80px;
+    right: -20px;
+    border-radius: 50%;
+    animation: 3s circleCcanime infinite linear;
+}

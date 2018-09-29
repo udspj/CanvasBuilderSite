@@ -194,7 +194,7 @@ class HomePage extends Component {
         const icons = [animeicon1,animeicon2,animeicon3,animeicon4,animeicon5,animeicon6];
         const randscale = Math.random()*0.5+0.5;
         const randrotate = Math.random()*180-90;
-        const time = Math.random()*2+8;
+        const time = Math.random()*2+6;
         const randmove = Math.floor(Math.random()*3.9);
         const moves = ['movea','moveb','movec','moved'];
         listdata.push({'move':moves[randmove],'time':time,'randx':randx,'randy':randy,'classname':'img'+randimg,'icontype':icons[randicon],'scale':randscale,'rotate':randrotate});
@@ -237,6 +237,14 @@ class HomePage extends Component {
                 src={data.icontype} alt="iconimg" />
           </div>
         ))}
+        <div className="circleA1" />
+        <div className="circleA2" />
+        <div className="circleA3" />
+        <div className="circleB1" />
+        <div className="circleB2" />
+        <div className="circleC1" />
+        <div className="circleC2" />
+        <div className="circleC3" />
       </div>
 
       <section className={classes.section1}>
