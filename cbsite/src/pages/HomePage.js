@@ -242,9 +242,6 @@ class HomePage extends Component {
         <div className="circleA3" />
         <div className="circleB1" />
         <div className="circleB2" />
-        <div className="circleC1" />
-        <div className="circleC2" />
-        <div className="circleC3" />
       </div>
 
       <section className={classes.section1}>
