@@ -81,11 +81,11 @@ class HeaderBar extends Component {
 		          value={this.state.value}
 		          onChange={this.handleChange.bind(this)}
 		        >
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Features" component={Link} to="/CanvasBuilderSite/home"/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Disabled" component={Link} to="/CanvasBuilderSite/videolist"/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/document"/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/cb"/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/about"/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Features" component={Link} to="/CanvasBuilderSite/home" disableFocusRipple={true} disableRipple={true}/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Disabled" component={Link} to="/CanvasBuilderSite/videolist" disableFocusRipple={true} disableRipple={true}/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/document" disableFocusRipple={true} disableRipple={true}/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/cb" disableFocusRipple={true} disableRipple={true}/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/about" disableFocusRipple={true} disableRipple={true}/>
 		        </Tabs>
 
 	          <div>
