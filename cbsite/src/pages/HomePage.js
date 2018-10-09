@@ -194,12 +194,27 @@ class HomePage extends Component {
         const icons = [animeicon1,animeicon2,animeicon3,animeicon4,animeicon5,animeicon6];
         const randscale = Math.random()*0.5+0.5;
         const randrotate = Math.random()*180-90;
-        const time = Math.random()*2+6;
+        const time = Math.random()*2+4;
         const randmove = Math.floor(Math.random()*3.9);
         const moves = ['movea','moveb','movec','moved'];
         listdata.push({'move':moves[randmove],'time':time,'randx':randx,'randy':randy,'classname':'img'+randimg,'icontype':icons[randicon],'scale':randscale,'rotate':randrotate});
     }
     this.setState({ listdata });
+
+    var circledata = [];
+    for (var i = 7; i >= 0; i--) {
+        const randx = Math.ceil(Math.random()*100);
+        const randy = Math.ceil(Math.random()*50);
+        const randxoffset = Math.ceil(Math.random()*100)-50;
+        const randyoffset = Math.ceil(Math.random()*100)-50;
+        const border = Math.floor(Math.random()*4)+1;
+        const diameter = Math.random()*100+50;
+        const time = Math.random()*1+2;
+        const randmove = Math.floor(Math.random()*3.9);
+        const anime = ['circleAaanime','circleAbanime','circleAcanime','circleBaanime','circleBbanime','circleCaanime','circleCbanime','circleCcanime'];
+        circledata.push({'anime':anime[randmove],'time':time,'randx':randx,'randy':randy,'randxoffset':randxoffset,'randyoffset':randyoffset,'border':border,'diameter':diameter});
+    }
+    this.setState({ circledata });
   }
 
   onWheel(e) {
@@ -237,14 +252,21 @@ class HomePage extends Component {
                 src={data.icontype} alt="iconimg" />
           </div>
         ))}
-        <div className="circleA1" />
-        <div className="circleA2" />
-        <div className="circleA3" />
-        <div className="circleB1" />
-        <div className="circleB2" />
-        <div className="circleC1" />
-        <div className="circleC2" />
-        <div className="circleC3" />
+        {this.state.circledata.map((data,reactid) => ( 
+          <div style={{
+                position: 'absolute',
+                border: data.border+'px solid #fff',
+                backgroundColor: '#ffffff00',
+                opacity: '0.2',
+                width: data.diameter+'px',
+                height: data.diameter+'px',
+                top: 'calc('+data.randx+'% - '+data.randxoffset+'px)',
+                left: 'calc('+data.randy+'% - '+data.randyoffset+'px)',
+                borderRadius: '50%',
+                animation: data.time+'s '+data.anime+' infinite linear',
+              }} key={reactid}>
+          </div>
+        ))}
       </div>
 
       <section className={classes.section1}>
