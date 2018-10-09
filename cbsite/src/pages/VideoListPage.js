@@ -59,12 +59,6 @@ class VideoListPage extends Component {
   render() {
     const {classes} = this.props;
     const { checked } = this.state;
-    var linkStyle;
-    if (this.state.hover) {
-      linkStyle = {color: '#3fc2ff'}
-    } else {
-      linkStyle = {color: '#666'}
-    }
     return (
       <div className={classes.bkdiv}>
       
