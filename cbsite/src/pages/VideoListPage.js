@@ -17,7 +17,11 @@ const styles = theme => ({
     paddingBottom: '30px',
     paddingLeft: '60px',
     paddingRight: '60px',
-    backgroundColor: '#e1e1e1',
+    // backgroundColor: '#e1e1e1',
+    backgroundColor: '#ffffff00',
+    width: '1100px',
+    marginRight: 'auto',
+    marginLeft: 'auto'
     // position: 'absolute',
     // left: 0,
     // right: 0,
