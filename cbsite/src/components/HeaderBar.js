@@ -81,11 +81,11 @@ class HeaderBar extends Component {
 		          value={this.state.value}
 		          onChange={this.handleChange.bind(this)}
 		        >
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Features" component={Link} to="/CanvasBuilderSite/home" disableRipple={true}/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Disabled" component={Link} to="/CanvasBuilderSite/videolist" disableRipple={true}/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/document" disableRipple={true}/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/cb" disableRipple={true}/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="Active" component={Link} to="/CanvasBuilderSite/about" disableRipple={true}/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="首页" component={Link} to="/CanvasBuilderSite/home" disableRipple={true}/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="视频教学" component={Link} to="/CanvasBuilderSite/videolist" disableRipple={true}/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="文档" component={Link} to="/CanvasBuilderSite/document" disableRipple={true}/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="区块链" component={Link} to="/CanvasBuilderSite/document" disableRipple={true}/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="关于我们" component={Link} to="/CanvasBuilderSite/about" disableRipple={true}/>
 		        </Tabs>
 
 	          <div>
@@ -98,7 +98,7 @@ class HeaderBar extends Component {
 		            onClick={this.handleToggle.bind(this)}
 		            className={classes.menuText}
 		        >
-		            Toggle Menu Grow
+		            语言选择
 		        </Button>
 		        <Menu
 		          id="simple-menu"
@@ -106,9 +106,8 @@ class HeaderBar extends Component {
 		          open={Boolean(anchorEl)}
 		          onClose={this.handleClose.bind(this)}
 		        >
-		          <MenuItem onClick={this.handleClose.bind(this,1)}>Profile</MenuItem>
-		          <MenuItem onClick={this.handleClose.bind(this,2)}>My account</MenuItem>
-		          <MenuItem onClick={this.handleClose.bind(this,3)}>Logout</MenuItem>
+		          <MenuItem onClick={this.handleClose.bind(this,1)}>中文</MenuItem>
+		          <MenuItem onClick={this.handleClose.bind(this,2)}>English</MenuItem>
 		        </Menu>
 		      </div>
 
