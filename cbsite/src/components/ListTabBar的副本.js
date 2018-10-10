@@ -16,7 +16,7 @@ import Menu from '@material-ui/core/Menu';
 const styles = theme => ({
   appBar: {
     backgroundColor: '#fff',
-    height: '40px',
+    height: '40px'
   },
   menuButtonGroup: {
   	marginLeft: 'auto',
@@ -24,26 +24,12 @@ const styles = theme => ({
   	marginTop: '-24px'
   },
   menuText: {
-    color: "#999"
+    color: "#666"
   },
   downMenuText: {
     backgroundColor: '#666',
     color: "#fff",
   	marginTop: '-28px'
-  },
-  downListBtn: {
-  	backgroundColor: "#333",
-  	position: 'absolute',
-  	width: '200px',
-  	height: '40px',
-  	color: '#fff',
-  	top: '0px',
-  	left: '0px'
-  },
-  downListBtnText: {
-  	marginTop:0,
-  	lineHeight: '40px',
-  	fontSize: '14px'
   }
 })
 
@@ -75,23 +61,38 @@ class ListTabBar extends Component {
     	this.setState({ anchorEl: null });
 	};
 
-	downlistClick(event){
-        event.preventDefault();
-        this.props.downlistClicked();
-    }
-
   render() {
     const {classes} = this.props;
     const { anchorEl } = this.state;
     return (
       <div>
 
-	    <AppBar position="static" color="default" className={classes.appBar}>
+	      <AppBar position="static" color="default" className={classes.appBar}>
 	        <Toolbar>
 
-				<div className={classes.downListBtn}>
-					<p className={classes.downListBtnText} onClick={this.downlistClick.bind(this)}>IED和编程 ▼</p>
-				</div>
+	          <div>
+		        <Button
+		            buttonRef={node => {
+		              this.anchorEl = node;
+		            }}
+		            aria-owns={this.state.open ? 'menu-list-grow' : null}
+		            aria-haspopup="true"
+		            onClick={this.handleToggle.bind(this)}
+		            className={classes.downMenuText}
+		        >
+		            IED和编程 ▼
+		        </Button>
+		        <Menu
+		          id="simple-menu"
+		          anchorEl={anchorEl}
+		          open={Boolean(anchorEl)}
+		          onClose={this.handleClose.bind(this)}
+		        >
+		          <MenuItem onClick={this.handleClose.bind(this,1)}>Profile</MenuItem>
+		          <MenuItem onClick={this.handleClose.bind(this,2)}>My account</MenuItem>
+		          <MenuItem onClick={this.handleClose.bind(this,3)}>Logout</MenuItem>
+		        </Menu>
+		      </div>
 
 	          <div className={classes.menuButtonGroup}>
 		          <Button className={classes.menuText}>Features</Button>
