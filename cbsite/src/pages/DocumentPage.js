@@ -86,7 +86,7 @@ class DocumentPage extends Component {
 
   render() {
     const {classes} = this.props;
-    const {menuopen} = this.state
+    const {menuopen} = this.state;
     return (
       <div className={classes.bkdiv}>
 
@@ -104,7 +104,7 @@ class DocumentPage extends Component {
         </div>
 
         <Grid className={classes.grid} container direction="row" justify="center" alignItems="flex-start"
-         style={{ marginLeft: menuopen ? '200px' : '0px' }}>
+        style={{ marginLeft: menuopen ? '200px' : '0px' }}>
           <Grid item xs={3}>
             <List className={classes.list}>
               {listdata.map((tile,reactid) => (

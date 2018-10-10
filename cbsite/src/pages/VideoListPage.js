@@ -38,34 +38,68 @@ const styles = theme => ({
     // position: 'absolute',
     // left: 0,
     // right: 0
+  },
+  downlist: {
+    width: '200px',
+    position: 'absolute',
+    backgroundColor: '#666',
+    color: '#fff',
+    fontSize: '14px'
   }
 })
 
 const listdata = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
 
+const menudata = ["菜单1abc","菜单2abc","菜单3abc","菜单4abc","菜单1abc","菜单1abc","菜单1abc","菜单1abc","菜单1abc","菜单1abc",]
+
 class VideoListPage extends Component {
-    constructor() {
-        super()
-        this.state = {
-          checked: true,
-          hover: false
-        }
+  constructor() {
+    super()
+    this.state = {
+      checked: true,
+      hover: false,
+      menuopen: false,
+      listmovex: 0
     }
+  }
 
   toggleHover(){
     this.setState({hover: !this.state.hover})
   }
 
+  downmenuClick() {
+    const w = (this.refs.bkdiv.clientWidth - 1100)/2 - 200;
+    this.setState({"listmovex":0})
+    if ( w < 0) {
+      this.setState({"listmovex":-w})
+    }
+    const menuopen = !this.state.menuopen;
+    this.setState({ menuopen });
+  }
+
   render() {
     const {classes} = this.props;
     const { checked } = this.state;
+    const {menuopen,listmovex} = this.state;
     return (
-      <div className={classes.bkdiv}>
-      
-        <ListTabBar className={classes.bar} />
+      <div className={classes.bkdiv} ref="bkdiv">
+
+        <ListTabBar className={classes.bar} downlistClicked={this.downmenuClick.bind(this)}/>
+
+        <div className={classes.downlist} style={{ display: menuopen ? 'block' : 'none' }}>
+          <br />
+          {menudata.map((tile,reactid) => (
+            <div key={reactid}>
+              {menudata[reactid]}
+              <br />
+              <br />
+            </div>
+          ))}
+        </div>
 
         <div className={classes.gridList}>
-        	<GridList cellHeight={250} cols={4} spacing={30}>   		
+        	<GridList cellHeight={250} cols={4} spacing={30}
+          style={{ marginLeft: menuopen ? listmovex+'px' : '0px' }}>   		
       			{listdata.map((tile,reactid) => ( 
       				<GridListTile key={reactid}>
                 <Fade in={checked}
