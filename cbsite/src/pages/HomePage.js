@@ -204,7 +204,7 @@ class HomePage extends Component {
     var circledata = [];
     for (var i = 7; i >= 0; i--) {
         const randx = Math.ceil(Math.random()*100);
-        const randy = Math.ceil(Math.random()*50);
+        const randy = Math.ceil(Math.random()*100);
         const randxoffset = Math.ceil(Math.random()*100)-50;
         const randyoffset = Math.ceil(Math.random()*100)-50;
         const border = Math.floor(Math.random()*4)+1;
