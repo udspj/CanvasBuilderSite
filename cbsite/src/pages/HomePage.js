@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import homebk1 from "../resource/homebk1.jpg";
 import logo from "../resource/logopage.png";
 import homebk21 from "../resource/homebk2_1.jpg";
-import homebk22 from "../resource/homebk2_2.jpg";
+import homebk22 from "../resource/homebk2_2.png";
 import homebk3 from "../resource/homebk3.jpg";
 import blueimg from "../resource/blueimg.png";
 import icon1 from "../resource/homeicon1.png";
