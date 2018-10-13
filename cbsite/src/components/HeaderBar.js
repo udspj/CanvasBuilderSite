@@ -88,6 +88,7 @@ class HeaderBar extends Component {
 		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="关于我们" component={Link} to="/CanvasBuilderSite/about" disableRipple={true}/>
 		        </Tabs>
 
+		    <ClickAwayListener onClickAway={this.handleClose.bind(this,0)}>
 	          <div>
 		        <Button
 		            buttonRef={node => {
@@ -107,17 +108,16 @@ class HeaderBar extends Component {
 		                style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
 		              >
 		                <Paper>
-		                  <ClickAwayListener onClickAway={this.handleClose.bind(this,0)}>
 		                    <MenuList>
 		                      <MenuItem onClick={this.handleClose.bind(this,1)}>中文</MenuItem>
 		                      <MenuItem onClick={this.handleClose.bind(this,2)}>English</MenuItem>
 		                    </MenuList>
-		                  </ClickAwayListener>
 		                </Paper>
 		              </Grow>
 		            )}
 	            </Popper>
 		      </div>
+		    </ClickAwayListener>
 
         	</Toolbar>
       	</AppBar>
