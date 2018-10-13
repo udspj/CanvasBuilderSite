@@ -104,7 +104,7 @@ class DocumentPage extends Component {
         </div>
 
         <Grid className={classes.grid} container direction="row" justify="center" alignItems="flex-start"
-        style={{ marginLeft: menuopen ? '200px' : '0px' }}>
+        style={{ marginLeft: menuopen ? '200px' : '0px', width: menuopen ? 'calc(100% - 200px)' : '100%' }}>
           <Grid item xs={3}>
             <List className={classes.list}>
               {listdata.map((tile,reactid) => (
