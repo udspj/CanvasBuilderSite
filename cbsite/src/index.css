@@ -2,14 +2,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-    overflow: -moz-hidden-unscrollable;
 }
 
-body::-webkit-scrollbar {
-    display: none;
+html {
+    -ms-overflow-style:none;
+    overflow-x: hidden;
 }
 
-body {
-    -ms-overflow-style: none;
-	overflow: auto;
-}
+::-webkit-scrollbar {display:none}
+
+/*@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+:-moz-any(#content,#appcontent) browser{
+ margin-right:-14px!important;
+ overflow-y:scroll;
+ margin-bottom:-14px!important;
+ overflow-x:scroll;
+}*/

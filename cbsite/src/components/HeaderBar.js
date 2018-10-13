@@ -13,7 +13,7 @@ import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
+import MenuList from '@material-ui/core/MenuList';
 
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -100,15 +100,23 @@ class HeaderBar extends Component {
 		        >
 		            语言选择
 		        </Button>
-		        <Menu
-		          id="simple-menu"
-		          anchorEl={anchorEl}
-		          open={Boolean(anchorEl)}
-		          onClose={this.handleClose.bind(this)}
-		        >
-		          <MenuItem onClick={this.handleClose.bind(this,1)}>中文</MenuItem>
-		          <MenuItem onClick={this.handleClose.bind(this,2)}>English</MenuItem>
-		        </Menu>
+            	<Popper open={this.state.open} anchorEl={this.anchorEl} transition disablePortal>
+		            {({ TransitionProps, placement }) => (
+		              <Grow
+		                {...TransitionProps}
+		                style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+		              >
+		                <Paper>
+		                  <ClickAwayListener onClickAway={this.handleClose.bind(this,0)}>
+		                    <MenuList>
+		                      <MenuItem onClick={this.handleClose.bind(this,1)}>中文</MenuItem>
+		                      <MenuItem onClick={this.handleClose.bind(this,2)}>English</MenuItem>
+		                    </MenuList>
+		                  </ClickAwayListener>
+		                </Paper>
+		              </Grow>
+		            )}
+	            </Popper>
 		      </div>
 
         	</Toolbar>
