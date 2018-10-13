@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import VideoListPage from "./pages/VideoListPage";
 import DocumentPage from "./pages/DocumentPage";
 import AboutPage from "./pages/AboutPage";
+import BlockchainPage from "./pages/BlockchainPage";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
               <Route path="/CanvasBuilderSite/home" component={HomePage} />
               <Route path="/CanvasBuilderSite/videolist" component={VideoListPage} />
               <Route path="/CanvasBuilderSite/document" component={DocumentPage} />
+              <Route path="/CanvasBuilderSite/blockchain" component={BlockchainPage} />
               <Route path="/CanvasBuilderSite/about" component={AboutPage} />
             </Switch>
 

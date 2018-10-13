@@ -84,7 +84,7 @@ class HeaderBar extends Component {
 		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="首页" component={Link} to="/CanvasBuilderSite/home" disableRipple={true}/>
 		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="视频教学" component={Link} to="/CanvasBuilderSite/videolist" disableRipple={true}/>
 		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="文档" component={Link} to="/CanvasBuilderSite/document" disableRipple={true}/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="区块链" component={Link} to="/CanvasBuilderSite/document" disableRipple={true}/>
+		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="区块链" component={Link} to="/CanvasBuilderSite/blockchain" disableRipple={true}/>
 		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="关于我们" component={Link} to="/CanvasBuilderSite/about" disableRipple={true}/>
 		        </Tabs>
 

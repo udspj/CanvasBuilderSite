@@ -11,6 +11,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 
+import './document.css';
+
 const styles = theme => ({
   bkdiv: {
     backgroundColor: '#e1e1e1'
@@ -58,7 +60,8 @@ const styles = theme => ({
     position: 'absolute',
     backgroundColor: '#666',
     color: '#fff',
-    fontSize: '14px'
+    fontSize: '14px',
+    marginTop: '40px'
   }
 })
 
@@ -90,9 +93,8 @@ class DocumentPage extends Component {
     return (
       <div className={classes.bkdiv}>
 
-        <ListTabBar className={classes.bar} downlistClicked={this.downmenuClick.bind(this)}/>
-
-        <div className={classes.downlist} style={{ display: menuopen ? 'block' : 'none' }}>
+        <div className={classes.downlist} 
+        style={{ display: menuopen ? 'block' : 'none', animation: menuopen ? '0.15s open linear' : '0.15s close linear' }}>
           <br />
           {menudata.map((tile,reactid) => (
             <div key={reactid}>
@@ -102,6 +104,8 @@ class DocumentPage extends Component {
             </div>
           ))}
         </div>
+
+        <ListTabBar className={classes.bar} downlistClicked={this.downmenuClick.bind(this)}/>
 
         <Grid className={classes.grid} container direction="row" justify="center" alignItems="flex-start"
         style={{ marginLeft: menuopen ? '200px' : '0px', width: menuopen ? 'calc(100% - 200px)' : '100%' }}>

@@ -44,7 +44,8 @@ const styles = theme => ({
     position: 'absolute',
     backgroundColor: '#666',
     color: '#fff',
-    fontSize: '14px'
+    fontSize: '14px',
+    marginTop: '40px'
   }
 })
 
@@ -84,9 +85,8 @@ class VideoListPage extends Component {
     return (
       <div className={classes.bkdiv} ref="bkdiv">
 
-        <ListTabBar className={classes.bar} downlistClicked={this.downmenuClick.bind(this)}/>
-
-        <div className={classes.downlist} style={{ display: menuopen ? 'block' : 'none' }}>
+        <div className={classes.downlist}
+        style={{ display: menuopen ? 'block' : 'none', animation: menuopen ? '0.15s open linear' : '0.15s close linear' }}>
           <br />
           {menudata.map((tile,reactid) => (
             <div key={reactid}>
@@ -96,6 +96,8 @@ class VideoListPage extends Component {
             </div>
           ))}
         </div>
+
+        <ListTabBar className={classes.bar} downlistClicked={this.downmenuClick.bind(this)}/>
 
         <div className={classes.gridList}>
         	<GridList cellHeight={250} cols={4} spacing={30}
