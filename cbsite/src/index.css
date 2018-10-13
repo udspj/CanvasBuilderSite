@@ -2,11 +2,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+    overflow: -moz-hidden-unscrollable;
 }
 
-html {
-    /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
-    -ms-overflow-style:none;
+body::-webkit-scrollbar {
+    display: none;
 }
 
-::-webkit-scrollbar {display:none}
+body {
+    -ms-overflow-style: none;
+	overflow: auto;
+}
