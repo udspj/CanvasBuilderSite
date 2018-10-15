@@ -5,11 +5,11 @@ body {
 }
 
 html {
-    -ms-overflow-style:none;
+    /*-ms-overflow-style:none;*/
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar {display:none}
+/*::-webkit-scrollbar {display:none}*/
 
 /*@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
