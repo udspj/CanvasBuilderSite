@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-import iconimg from "../resource/logonav.png";
+import iconimg from "../../static/resource/logonav.png";
 
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';

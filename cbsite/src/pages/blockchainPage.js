@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
 import ListTabBar from '../components/ListTabBar'
-import documentIcon from "../resource/document.png";
+import documentIcon from "../../static/resource/document.png";
 
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
-import eye from "../resource/eye.png";
+import eye from "../../static/resource/eye.png";
 
 import Grid from '@material-ui/core/Grid';
 

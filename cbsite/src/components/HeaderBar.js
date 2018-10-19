@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link'
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-import iconimg from "../resource/logonav.png";
+import iconimg from "../../static/resource/logonav.png";
 
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
@@ -81,11 +81,11 @@ class HeaderBar extends Component {
 		          value={this.state.value}
 		          onChange={this.handleChange.bind(this)}
 		        >
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="首页" component={Link} to="/CanvasBuilderSite/home" disableRipple={true}/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="视频教学" component={Link} to="/CanvasBuilderSite/videolist" disableRipple={true}/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="文档" component={Link} to="/CanvasBuilderSite/document" disableRipple={true}/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="区块链" component={Link} to="/CanvasBuilderSite/blockchain" disableRipple={true}/>
-		          <Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="关于我们" component={Link} to="/CanvasBuilderSite/about" disableRipple={true}/>
+		          <Link href="/home"><Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="首页" disableRipple={true}/></Link>
+                  <Link href="/videolist"><Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="视频教学" disableRipple={true}/></Link>
+                  <Link href="/document"><Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="文档" disableRipple={true}/></Link>
+                  <Link href="/blockchain"><Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="区块链" disableRipple={true}/></Link>
+                  <Link href="/about"><Tab className={classes.menuText} classes={{ root: classes.tabRoot }} label="关于我们" disableRipple={true}/></Link>
 		        </Tabs>
 
 		    <ClickAwayListener onClickAway={this.handleClose.bind(this,0)}>

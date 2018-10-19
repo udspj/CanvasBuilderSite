@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
 import ListTabBar from '../components/ListTabBar'
-import eye from "../resource/eye.png";
+import eye from "../../static/resource/eye.png";
 
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';

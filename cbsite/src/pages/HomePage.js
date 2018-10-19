@@ -1,31 +1,32 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-import homebk1 from "../resource/homebk1.jpg";
-import logo from "../resource/logopage.png";
-import homebk21 from "../resource/homebk2_1.jpg";
-import homebk22 from "../resource/homebk2_2.png";
-import homebk3 from "../resource/homebk3.jpg";
-import blueimg from "../resource/blueimg.png";
-import icon1 from "../resource/homeicon1.png";
-import icon2 from "../resource/homeicon2.png";
-import icon3 from "../resource/homeicon3.png";
-import shapes from "../resource/homeshape.png";
+import homebk1 from "../../static/resource/homebk1.jpg";
+import logo from "../../static/resource/logopage.png";
+import homebk21 from "../../static/resource/homebk2_1.jpg";
+import homebk22 from "../../static/resource/homebk2_2.png";
+import homebk3 from "../../static/resource/homebk3.jpg";
+import blueimg from "../../static/resource/blueimg.png";
+import icon1 from "../../static/resource/homeicon1.png";
+import icon2 from "../../static/resource/homeicon2.png";
+import icon3 from "../../static/resource/homeicon3.png";
+import shapes from "../../static/resource/homeshape.png";
 
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
 import HomeCard from '../components/HomeCard';
 
-import './home.css';
+import '../../static/home.css';
+
 // import scrollToComponent from 'react-scroll-to-component';
 // import scrollIntoView from 'scroll-into-view-if-needed'
-import animeicon1 from "../resource/icon1.png";
-import animeicon2 from "../resource/icon2.png";
-import animeicon3 from "../resource/icon3.png";
-import animeicon4 from "../resource/icon4.png";
-import animeicon5 from "../resource/icon5.png";
-import animeicon6 from "../resource/icon6.png";
+import animeicon1 from "../../static/resource/icon1.png";
+import animeicon2 from "../../static/resource/icon2.png";
+import animeicon3 from "../../static/resource/icon3.png";
+import animeicon4 from "../../static/resource/icon4.png";
+import animeicon5 from "../../static/resource/icon5.png";
+import animeicon6 from "../../static/resource/icon6.png";
 
 const styles = theme => ({
   section1: {
