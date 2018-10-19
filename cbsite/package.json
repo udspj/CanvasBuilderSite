@@ -23,6 +23,5 @@
     "build": "next build && next export",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "homepage": "http://blog.sycx.me/CanvasBuilderSite/"
+  }
 }
