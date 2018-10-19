@@ -17,7 +17,7 @@ import Grid from '@material-ui/core/Grid';
 
 import HomeCard from '../components/HomeCard';
 
-import '../../static/home.css';
+import './home.css';
 
 // import scrollToComponent from 'react-scroll-to-component';
 // import scrollIntoView from 'scroll-into-view-if-needed'
