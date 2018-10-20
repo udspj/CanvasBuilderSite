@@ -25792,7 +25792,8 @@ var styles = function styles(theme) {
     downListBtnText: {
       marginTop: 0,
       lineHeight: '40px',
-      fontSize: '14px'
+      fontSize: '14px',
+      textAlign: 'center'
     }
   };
 };
@@ -25861,7 +25862,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 88
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -25870,20 +25871,20 @@ function (_Component) {
         className: classes.appBar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 90
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_6___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 91
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.downListBtn,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 93
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -25891,38 +25892,31 @@ function (_Component) {
         onClick: this.downlistClick.bind(this),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 94
         },
         __self: this
       }, "IED\u548C\u7F16\u7A0B \u25BC")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.menuButtonGroup,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 97
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4___default.a, {
         className: classes.menuText,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 98
         },
         __self: this
       }, "Features"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4___default.a, {
         className: classes.menuText,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
-        },
-        __self: this
-      }, "Enterprise"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        className: classes.menuText,
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 99
         },
         __self: this
-      }, "Support"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      }, "Enterprise"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4___default.a, {
         className: classes.menuText,
         __source: {
           fileName: _jsxFileName,
@@ -25934,6 +25928,13 @@ function (_Component) {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 101
+        },
+        __self: this
+      }, "Support"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        className: classes.menuText,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 102
         },
         __self: this
       }, "Support")))));
@@ -26007,7 +26008,8 @@ var styles = function styles(theme) {
   return {
     title: {
       fontSize: '50px',
-      color: '#333'
+      color: '#333',
+      textAlign: 'center'
     },
     line: {
       width: '30%',
@@ -26027,10 +26029,12 @@ var styles = function styles(theme) {
       marginRight: 'auto'
     },
     title1: {
-      fontSize: 20
+      fontSize: 20,
+      textAlign: 'center'
     },
     title2: {
-      color: '#999'
+      color: '#999',
+      textAlign: 'center'
     },
     iconcontent: {
       paddingLeft: '50px',
@@ -26065,28 +26069,28 @@ function (_Component) {
         className: classes.bkdiv,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 62
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 64
         },
         __self: this
       }, "\u795E\u708E\u79D1\u6280"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.line,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 65
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.iconcontent,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -26096,7 +26100,7 @@ function (_Component) {
         alignItems: "flex-start",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 67
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -26104,86 +26108,86 @@ function (_Component) {
         xs: 3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 68
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.container,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 69
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title1,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 70
         },
         __self: this
       }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title2,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68
-        },
-        __self: this
-      }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        item: true,
-        xs: 3,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 71
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.container,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 72
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: classes.title1,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 73
-        },
-        __self: this
-      }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: classes.title2,
+      }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        item: true,
+        xs: 3,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 74
         },
         __self: this
-      }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        item: true,
-        xs: 3,
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: classes.container,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: classes.title1,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
+        },
+        __self: this
+      }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: classes.title2,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 77
         },
         __self: this
+      }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        item: true,
+        xs: 3,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 80
+        },
+        __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.container,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 81
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title1,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 82
         },
         __self: this
       }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title2,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 83
         },
         __self: this
       }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -26191,28 +26195,28 @@ function (_Component) {
         xs: 3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 86
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.container,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 87
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title1,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 88
         },
         __self: this
       }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title2,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 89
         },
         __self: this
       }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"))))));
@@ -26251,7 +26255,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOsAAAApCAYAAADU
 
 /***/ }),
 
-/***/ 10:
+/***/ 11:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/
@@ -26276,5 +26280,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[10,"static/runtime/webpack.js","styles"]]]));;
+},[[11,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=about.js.map

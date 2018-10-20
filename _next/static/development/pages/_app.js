@@ -34028,7 +34028,8 @@ var styles = function styles(theme) {
       backgroundColor: '#000'
     },
     copyright: {
-      color: '#fff'
+      color: '#fff',
+      textAlign: 'center'
     }
   };
 };
@@ -34052,7 +34053,7 @@ function (_Component) {
         className: classes.bkdiv,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 28
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -34061,14 +34062,14 @@ function (_Component) {
         className: classes.appBar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.copyright,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 32
         },
         __self: this
       }, "copyright")));

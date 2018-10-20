@@ -49,6 +49,15 @@ html {
  margin-bottom:-14px!important;
  overflow-x:scroll;
 }*/
+@keyframes open {
+  0% { margin-top:0px; opacity: 0.5; }
+  100% { margin-top:40px; opacity: 1; }
+}
+
+@keyframes close {
+  0% { margin-top:40px; opacity: 1; }
+  100% { margin-top:0px; opacity: 0; }
+}
 /*
   .Test {
 
