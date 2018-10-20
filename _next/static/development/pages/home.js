@@ -18967,7 +18967,8 @@ var styles = function styles(theme) {
     whitecontent: {
       backgroundColor: '#fff',
       paddingBottom: '70px',
-      paddingTop: '50px'
+      paddingTop: '50px',
+      textAlign: 'center'
     },
     title3: {
       fontSize: '30px',
@@ -19002,7 +19003,8 @@ var styles = function styles(theme) {
     },
     shapes: {
       marginTop: '50px',
-      marginBottom: '50px'
+      marginBottom: '50px',
+      textAlign: 'center'
     }
   };
 }; // const listdata = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
@@ -19108,14 +19110,14 @@ function (_Component) {
         className: "bk",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 260
+          lineNumber: 262
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "bk2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 261
+          lineNumber: 263
         },
         __self: this
       }, this.state.listdata.map(function (data, reactid) {
@@ -19131,7 +19133,7 @@ function (_Component) {
           key: reactid,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 263
+            lineNumber: 265
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -19145,7 +19147,7 @@ function (_Component) {
           alt: "iconimg",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 271
+            lineNumber: 273
           },
           __self: this
         }));
@@ -19153,70 +19155,70 @@ function (_Component) {
         className: "circleA1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 278
+          lineNumber: 280
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "circleA2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 279
+          lineNumber: 281
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "circleA3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 280
+          lineNumber: 282
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "circleB1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 281
+          lineNumber: 283
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "circleB2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 282
+          lineNumber: 284
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "circleC1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 283
+          lineNumber: 285
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "circleC2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 284
+          lineNumber: 286
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "circleC3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 285
+          lineNumber: 287
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         className: classes.section1,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 288
+          lineNumber: 290
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.section1div,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 289
+          lineNumber: 291
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -19225,21 +19227,21 @@ function (_Component) {
         alt: "iconimg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 290
+          lineNumber: 292
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title1,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 291
+          lineNumber: 293
         },
         __self: this
       }, "HTML5 \u6E38\u620F\u548C\u5E94\u7528\u7684\u96C6\u6210\u5F00\u53D1\u73AF\u5883"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title2,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 292
+          lineNumber: 294
         },
         __self: this
       }, "JAVASCRIPT / TYPESCRIPT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_13___default.a, {
@@ -19249,7 +19251,7 @@ function (_Component) {
         color: "default",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 293
+          lineNumber: 295
         },
         __self: this
       }, "\u514D\u8D39\u4E0B\u8F7D"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
@@ -19257,7 +19259,7 @@ function (_Component) {
         ref: "autoscroll",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 299
+          lineNumber: 301
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19267,7 +19269,7 @@ function (_Component) {
         alignItems: "flex-start",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 300
+          lineNumber: 302
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19275,20 +19277,20 @@ function (_Component) {
         xs: 3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 301
+          lineNumber: 303
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.card1,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 302
+          lineNumber: 304
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HomeCard__WEBPACK_IMPORTED_MODULE_15__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 303
+          lineNumber: 305
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19296,20 +19298,20 @@ function (_Component) {
         xs: 3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 306
+          lineNumber: 308
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.card2,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 307
+          lineNumber: 309
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HomeCard__WEBPACK_IMPORTED_MODULE_15__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 308
+          lineNumber: 310
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19317,20 +19319,20 @@ function (_Component) {
         xs: 3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 311
+          lineNumber: 313
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.card3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 312
+          lineNumber: 314
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HomeCard__WEBPACK_IMPORTED_MODULE_15__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 313
+          lineNumber: 315
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19338,27 +19340,27 @@ function (_Component) {
         xs: 3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 316
+          lineNumber: 318
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.card4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 317
+          lineNumber: 319
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HomeCard__WEBPACK_IMPORTED_MODULE_15__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 318
+          lineNumber: 320
         },
         __self: this
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         className: classes.section22,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 324
+          lineNumber: 326
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19368,7 +19370,7 @@ function (_Component) {
         alignItems: "flex-start",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 325
+          lineNumber: 327
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19376,14 +19378,14 @@ function (_Component) {
         xs: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 326
+          lineNumber: 328
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "prodimgdiv",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 327
+          lineNumber: 329
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19391,14 +19393,14 @@ function (_Component) {
         xs: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 330
+          lineNumber: 332
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "prodimgdiv",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 331
+          lineNumber: 333
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19406,69 +19408,69 @@ function (_Component) {
         xs: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 334
+          lineNumber: 336
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "prodimgdiv",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 335
+          lineNumber: 337
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 341
+          lineNumber: 343
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.bluecontent,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 342
+          lineNumber: 344
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 343
+          lineNumber: 345
         },
         __self: this
       }, "\u7F51\u7EDC\u6E38\u620F\u5F00\u53D1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.line,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 344
+          lineNumber: 346
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "blueimg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 345
+          lineNumber: 347
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.whitecontent,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 347
+          lineNumber: 349
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 348
+          lineNumber: 350
         },
         __self: this
       }, "\u7F51\u7EDC\u6E38\u620F\u5F00\u53D1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.linedard,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 349
+          lineNumber: 351
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -19477,35 +19479,35 @@ function (_Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 350
+          lineNumber: 352
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.linelong,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 351
+          lineNumber: 353
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 352
+          lineNumber: 354
         },
         __self: this
       }, "\u7F51\u7EDC\u6E38\u620F\u5F00\u53D1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.line,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 353
+          lineNumber: 355
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.iconcontent,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 354
+          lineNumber: 356
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19515,7 +19517,7 @@ function (_Component) {
         alignItems: "flex-start",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 355
+          lineNumber: 357
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19523,7 +19525,7 @@ function (_Component) {
         xs: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 356
+          lineNumber: 358
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -19532,14 +19534,14 @@ function (_Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 357
+          lineNumber: 359
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title5,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 358
+          lineNumber: 360
         },
         __self: this
       }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19547,7 +19549,7 @@ function (_Component) {
         xs: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 360
+          lineNumber: 362
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -19556,14 +19558,14 @@ function (_Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 361
+          lineNumber: 363
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title5,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 362
+          lineNumber: 364
         },
         __self: this
       }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -19571,7 +19573,7 @@ function (_Component) {
         xs: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 364
+          lineNumber: 366
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -19580,70 +19582,70 @@ function (_Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 365
+          lineNumber: 367
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title5,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 366
+          lineNumber: 368
         },
         __self: this
       }, "\u5B8C\u6574\u9879\u76EE\u6A21\u677F"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.bluecontent,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 371
+          lineNumber: 373
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 372
+          lineNumber: 374
         },
         __self: this
       }, "\u7F51\u7EDC\u6E38\u620F\u5F00\u53D1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.line,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 373
+          lineNumber: 375
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "blueimg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 374
+          lineNumber: 376
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.bluecontent,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 376
+          lineNumber: 378
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: classes.title3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 377
+          lineNumber: 379
         },
         __self: this
       }, "\u7F51\u7EDC\u6E38\u620F\u5F00\u53D1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.line,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 378
+          lineNumber: 380
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "blueimg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 379
+          lineNumber: 381
         },
         __self: this
       }))));
