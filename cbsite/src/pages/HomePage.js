@@ -142,7 +142,8 @@ const styles = theme => ({
   whitecontent: {
   	backgroundColor: '#fff',
   	paddingBottom: '70px',
-  	paddingTop: '50px'
+  	paddingTop: '50px',
+    textAlign:'center'
   },
   title3: {
   	fontSize: '30px',
@@ -177,7 +178,8 @@ const styles = theme => ({
   },
   shapes: {
   	marginTop: '50px',
-  	marginBottom: '50px'
+  	marginBottom: '50px',
+    textAlign:'center'
   },
 })
 // const listdata = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
