@@ -43,7 +43,8 @@ const styles = theme => ({
   downListBtnText: {
   	marginTop:0,
   	lineHeight: '40px',
-  	fontSize: '14px'
+  	fontSize: '14px',
+    textAlign: 'center'
   }
 })
 

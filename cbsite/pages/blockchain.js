@@ -1,5 +1,5 @@
 import Page from '../layouts/main'
-import Home from '../src/pages/blockchainPage'
+import Home from '../src/pages/BlockchainPage'
 import Head from 'next/head'
 
 export default () => (

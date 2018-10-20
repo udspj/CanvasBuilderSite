@@ -12,7 +12,8 @@ import Grid from '@material-ui/core/Grid';
 const styles = theme => ({
   title: {
     fontSize: '50px',
-    color: '#333'
+    color: '#333',
+    textAlign: 'center'
   },
   line: {
     width: '30%',
@@ -32,10 +33,12 @@ const styles = theme => ({
     marginRight: 'auto'
   },
   title1: {
-    fontSize: 20
+    fontSize: 20,
+    textAlign: 'center'
   },
   title2: {
-    color: '#999'
+    color: '#999',
+    textAlign: 'center'
   },
   iconcontent: {
     paddingLeft: '50px',

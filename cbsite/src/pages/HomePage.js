@@ -39,6 +39,9 @@ const styles = theme => ({
     justifyContent:'center',
     display:'-webkit-flex'
   },
+  section1div: {
+    textAlign:'center'
+  },
   logo: {
   	// marginTop: '80px'
   },
@@ -143,11 +146,13 @@ const styles = theme => ({
   },
   title3: {
   	fontSize: '30px',
-  	color: '#fff'
+  	color: '#fff',
+    textAlign:'center'
   },
   title4: {
   	fontSize: '30px',
-  	color: '#808fb9'
+  	color: '#808fb9',
+    textAlign:'center'
   },
   linelong: {
   	width: '100%',
@@ -157,7 +162,8 @@ const styles = theme => ({
   },
   iconcontent: {
   	backgroundColor: '#fcfcfd',
-  	padding: '50px'
+  	padding: '50px',
+    textAlign:'center'
   },
   iconimg: {
   	width: '90px',
@@ -280,7 +286,7 @@ class HomePage extends Component {
       </div>
 
       <section className={classes.section1}>
-        <div>
+        <div className={classes.section1div}>
         	<img className={classes.logo} src={logo} alt="iconimg" />
         	<p className={classes.title1}>HTML5 游戏和应用的集成开发环境</p>
         	<p className={classes.title2}>JAVASCRIPT / TYPESCRIPT</p>

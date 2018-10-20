@@ -46,6 +46,9 @@ const styles = theme => ({
     color: '#fff',
     fontSize: '14px',
     marginTop: '40px'
+  },
+  nemutexts: {
+    textAlign: 'center'
   }
 })
 
@@ -89,7 +92,7 @@ class VideoListPage extends Component {
         style={{ display: menuopen ? 'block' : 'none', animation: menuopen ? '0.15s open linear' : '0.15s close linear' }}>
           <br />
           {menudata.map((tile,reactid) => (
-            <div key={reactid}>
+            <div key={reactid} className={classes.nemutexts}>
               {menudata[reactid]}
               <br />
               <br />

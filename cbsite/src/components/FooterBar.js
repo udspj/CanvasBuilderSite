@@ -16,7 +16,8 @@ const styles = theme => ({
     backgroundColor: '#000'
   },
   copyright: {
-    color: '#fff'
+    color: '#fff',
+    textAlign: 'center'
   }
 })
 
